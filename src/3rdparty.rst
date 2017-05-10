@@ -6,6 +6,7 @@ Integration with Third Party Software
 
     Arnold <3rdparty/solidangle-arnold>
     Deadline <3rdparty/thinkbox-deadline>
+    Corona <3rdparty/render-legion-corona-renderer>
     Houdini <3rdparty/sidefx-houdini>
     Guerilla Render <3rdparty/mercenaries-engineering-guerilla-render>
     Mantra <3rdparty/sidefx-mantra>
@@ -15,5 +16,7 @@ Integration with Third Party Software
     Muster <3rdparty/visual-vertex-muster>
     Nuke <3rdparty/the-foundry-nuke>
     Pro Render <3rdparty/amd-pro-render>
+    Redshift <3rdparty/redshift>
+    Renderman <3rdparty/pixar-renderman>
     Royal Render <3rdparty/royal-render>
     V-Ray <3rdparty/chaos-group-vray>
