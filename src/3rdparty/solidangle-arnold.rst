@@ -1,5 +1,5 @@
-SolidAngle Arnold and Altus
----------------------------
+Denoise SolidAngle Arnold renders with Altus
+--------------------------------------------
 
 `AA_seed` allows you to set the seed.
 

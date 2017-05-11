@@ -1,5 +1,5 @@
-Mercenaries Engineering Guerilla Render and Altus
--------------------------------------------------
+Denoise Mercenaries Engineering Guerilla Render with Altus
+----------------------------------------------------------
 
 Merceneries Engineering's Guerilla Render supports generating inputs to Altus out of the box.
 

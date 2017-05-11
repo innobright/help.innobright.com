@@ -1,5 +1,5 @@
-NVIDIA Mental Ray and Altus
----------------------------
+Denoise NVIDIA Mental Ray renders with Altus
+--------------------------------------------
 
 .. warning::
 

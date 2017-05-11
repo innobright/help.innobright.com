@@ -1,5 +1,5 @@
-Render Legion Corona Render and Altus
--------------------------------------
+Denoise Render Legion Corona Render renders with Altus
+------------------------------------------------------
 
 .. warning::
 

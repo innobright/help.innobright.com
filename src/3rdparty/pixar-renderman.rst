@@ -1,4 +1,4 @@
-Pixar Renderman and Altus
--------------------------
+Denoise Pixar Renderman renders with Altus
+------------------------------------------
 
 More information coming soon.

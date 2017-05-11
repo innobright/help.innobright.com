@@ -1,5 +1,5 @@
-Thinkbox Deadline and Altus
----------------------------
+Manage Altus with Thinkbox Deadline
+-----------------------------------
 
 Deadline 8 and later support Altus.
 

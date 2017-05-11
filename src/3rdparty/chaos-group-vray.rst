@@ -1,5 +1,5 @@
-Chaos Group V-Ray and Altus
----------------------------
+Denoise Chaos Group V-Ray renders and Altus
+-------------------------------------------
 
 .. warning::
 

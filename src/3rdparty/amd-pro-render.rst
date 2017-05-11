@@ -1,4 +1,4 @@
-AMD Pro Render and Altus
-------------------------
+Denoise AMD Pro Render renders with Altus
+-----------------------------------------
 
 More information coming soon.

@@ -1,4 +1,4 @@
-Next Limit Maxwell and Altus
-----------------------------
+Denoise Next Limit Maxwell renders with Altus
+---------------------------------------------
 
 More information coming soon.
