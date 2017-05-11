@@ -1,8 +1,9 @@
 Buffers
 -------
 
-Information about how Altus needs two input images for each scene, called buffers, b0 and b1, and how they both must have a different random seed such that noise appears in different places.
+Altus needs two input images for each scene, which we call call buffers, b0 and b1.
 
-Questions to answer here:
+Each of these must be rendered with a different sample seed such that noise varies between images;
+we use the difference in noise patterns to remove noise.
 
-* Why are two buffers required?
+Altus needs this variance in noise to effectively remove it from renders. Two buffers are **required**.
