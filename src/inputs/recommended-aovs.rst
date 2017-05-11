@@ -6,6 +6,8 @@ More information coming soon.
 By default, only the Beauty AOV is filtered.
 You can configure Altus to filter other AOVs in various ways; see :doc:`/usage/filtering-aovs` for more information.
 
+If you're wondering which AOVs your renderer generates that correspond to the ones below, please check :doc:`../3rdparty`.
+
 Beauty
 ======
 
