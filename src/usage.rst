@@ -7,4 +7,4 @@ Usage
     usage/animation
     usage/filtering-aovs
     usage/preserving-layers
-    usage/error-recovery
+    usage/advanced-usage
