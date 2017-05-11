@@ -26,7 +26,7 @@ Specified using the ``nrm`` series of options.
 Albedo
 ======
 
-Unshaded diffuse texture applied with displacement to the geometry, i.e. thge diffuse reflectance of surfaces with the diffuse component.
+Unshaded diffuse texture applied with displacement to the geometry, i.e. the diffuse reflectance of surfaces with the diffuse component.
 Altus prefers the pass with the diffuse component only, with no lighting model applied; the goal is have the constant color on a surface.
 
 In V-Ray, this AOV is typically called "diffuse_filter"; Arnold, "diffuse_albedo"; Redshift "diffuse_color"; Mental Ray "diffuse_material".
@@ -36,7 +36,7 @@ Specified using the ``alb`` series of options.
 Visibility
 ==========
 
-Grayscale shadows from all present ight sources in a scene.
+Grayscale shadows from all present light sources in a scene.
 Alternatively it can be a black and white binary input defining your keylight only.
 It is paramount this AOV does not contain color information.
 This pass is sometimes referred to as the "shadow pass".
