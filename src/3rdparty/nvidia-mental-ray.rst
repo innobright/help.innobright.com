@@ -1,6 +1,10 @@
 NVIDIA Mental Ray and Altus
 ---------------------------
 
+.. warning::
+
+    This article is mostly out of date, but will be updated soon.
+
 The Innobright team has tested Mental Ray in Maya 2015 for scenes that use the mia_material_x_passes shader or Maya materials.
 
 For a still images render to two separate frames.
