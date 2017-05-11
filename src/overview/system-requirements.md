@@ -7,7 +7,7 @@ The [Microsoft Visual C++ Redistributable for Visual Studio 2015][vc2015rt] is r
 
 [vc2015rt]: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 
-For Linux, we require a Linux distribution that include glibc 2.12 or later.
+For Linux, we require a Linux distribution that includes glibc 2.12 or later.
 This includes long-term support distributions such CentOS 6.x or Ubuntu 12.04.
 Newer distributions will definitely work.
 Our release binaries are statically linked, and include libraries such as zlib, OpenEXR, and libgcc and libstdc++, so you do not need to install anything additional on Linux  other than OpenCL.
