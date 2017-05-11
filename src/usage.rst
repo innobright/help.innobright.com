@@ -4,6 +4,7 @@ Usage
 .. toctree::
     :maxdepth: 2
 
+    usage/gui
     usage/animation
     usage/filtering-aovs
     usage/preserving-layers
