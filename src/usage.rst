@@ -10,3 +10,4 @@ Usage
     usage/filtering-aovs
     usage/preserving-layers
     usage/advanced-usage
+    usage/common-errors
