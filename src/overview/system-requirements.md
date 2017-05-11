@@ -2,6 +2,8 @@
 
 All versions of Altus highly recommend installing OpenCL, if available, for your system. See below.
 
+All versions of Altus work on 64-bit computers and operating systems only.
+
 On Windows, Windows 7 or later is supported.
 The [Microsoft Visual C++ Redistributable for Visual Studio 2015][vc2015rt] is required (this is included in Altus' installer).
 
