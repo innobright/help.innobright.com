@@ -25,3 +25,11 @@ Render the scene with these settings once.
 
 After that rename all the output images so they end with _b1.exr instead of _b0.exr. This way it won’t rewrite the rendered
 images and we will have all the passes twice with different noise patterns.
+
+AOV mapping:
+
+* Saved beauty passes → rgb
+* CGeometry_WorldPosition → pos
+* CGeometry_NormalsShading → nrm​
+* CShading_Shadows → vis​
+* CShading_SourceColor → alb
