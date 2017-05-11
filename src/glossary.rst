@@ -28,5 +28,9 @@ Glossary
     OpenEXR
         Open-source image format developed by Industrial Light & Magic (ILM) for representing high-dynamic range images. Specifically designed for the VFX industry.
 
+    samples per pixel
+    SPP
+        The number of times a value is calculated before the list of values is averaged together to get a final pixel value.
+
     VFX
         Abbreviation for "visual effects".
