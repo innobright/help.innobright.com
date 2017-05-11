@@ -15,6 +15,7 @@ Integration with Third Party Software
     Maxwell <3rdparty/next-limit-maxwell>
     Muster <3rdparty/visual-vertex-muster>
     Nuke <3rdparty/the-foundry-nuke>
+    Octane <3rdparty/otoy-octane>
     Pro Render <3rdparty/amd-pro-render>
     Redshift <3rdparty/redshift>
     Renderman <3rdparty/pixar-renderman>
