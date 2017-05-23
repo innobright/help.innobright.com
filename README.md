@@ -1,6 +1,6 @@
 # help.innobright.com Website
 
-This Website is built with Sphinx.
+This Website is built with [Sphinx](http://sphinx-doc.org/).
 
 ## Dependencies
 
@@ -29,6 +29,12 @@ To deploy, use
     fab -u $USER deploy
 
 Where `$USER` is your user on the remote server, e.g. "sjain". This assumes that you have an account on the remote server and SSH is properly setup on it.
+
+If you add a new item to the table of contents hierarchy, you may need to run:
+
+    fab clean
+
+To force Sphinx to rebuild the entire site.
 
 ### Without virtualenv
 
