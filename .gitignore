@@ -1,1 +1,3 @@
 build/*
+fabfile.pyc
+venv
