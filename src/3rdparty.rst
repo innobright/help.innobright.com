@@ -17,6 +17,7 @@ Integration with Third Party Software
     Nuke <3rdparty/the-foundry-nuke>
     OctaneRender <3rdparty/otoy-octanerender>
     Pro Render <3rdparty/amd-pro-render>
+    Qube <3rdparty/pipelinefx-qube>
     Redshift <3rdparty/redshift>
     Renderman <3rdparty/pixar-renderman>
     Royal Render <3rdparty/royal-render>
