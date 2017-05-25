@@ -16,10 +16,10 @@ To specify an input to altus is a side-by-side image simply use the set of CLI f
 
     --rgb-stereo= the file path of the beauty pass EXR image - the file must be a stereo (side-by-side) image. This option removes the need to specify '--rgb-0' or '--rgb-1' (optional).
     --pos-stereo= the file path of the world position pass EXR image. The file must be a stereo image. This option removes the need to specify '--pos-0' or '--pos-1' (optional).
-    --nrm-0= the file path of the normal AOV EXR image - first buffer (optional
-    --vis-0= the file path of the visibility AOV EXR image - first buffer (optional)
-    --alb-0= the file path of the albedo AOV EXR image - first buffer (optional)
-    --cau-0= the file path of the caustics AOV EXR image - first buffer (optional)
+    --nrm-stereo= the file path of the normal AOV EXR image - first buffer (optional
+    --vis-stereo= the file path of the visibility AOV EXR image - first buffer (optional)
+    --alb-stereo= the file path of the albedo AOV EXR image - first buffer (optional)
+    --cau-stereo= the file path of the caustics AOV EXR image - first buffer (optional)
     --extra-stereo= the file path of an extra AOV EXR image - the file must be a stereo image. This option removes the need to specify '--extra-0' or '--extra-1' (optional).
     --additional-stereo=the file path of an additional AOV EXR image (optional)
 
