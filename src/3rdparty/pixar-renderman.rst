@@ -41,7 +41,7 @@ Recommended List of AOVs to use with Altus:
 
 **How to Output AOVs that are compatible with Altus (from maya)**
 
-Add AOVs to save from V-Ray (Maya) by opening the Render Settings Window:
+Add AOVs to save from Renderman (Maya) by opening the Render Settings Window:
 
 .. image:: ./maya/Render_Settings_Location_Crop.png
    :scale: 60 %
@@ -87,7 +87,7 @@ You can render once using a stereo camera rig and Altus will divide the image in
 The Maya Stereo Rig is a commonly used camera rig where the stereo effect can be controlled from the Attribute Editor of the center camera inside Maya:
 
 .. image:: ./maya/Stereo_maya.png
-   :scale: 80 %
+   :scale: 100 %
    :align: center
 
 
