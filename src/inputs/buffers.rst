@@ -20,8 +20,11 @@ If the inputs are given correctly to Altus, you should end up with this denoised
    :align: center
 
 
-To generate two buffers visit: https://help.innobright.com/usage/basic-usage/
+.. Note::
+    For more information on generating/using two buffers correctly visit our pages:
 
-To generate two buffers at once by using side-by-side images: https://help.innobright.com/inputs/side-by-side/
+    To generate two buffers visit: https://help.innobright.com/usage/basic-usage/
 
-For more information on how to generate two buffers with your favorite 3d package and render visit:  https://help.innobright.com/3rdparty/
+    To generate two buffers at once by using side-by-side images: https://help.innobright.com/inputs/side-by-side/
+
+    For more information on how to generate two buffers with your favorite 3d package and render visit:  https://help.innobright.com/3rdparty/
