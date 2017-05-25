@@ -3,7 +3,7 @@ Denoise Render Legion Corona Render renders with Altus
 
 .. warning::
 
-    This tutorial is for older versions of Altus; configuring Corona and Altus are significantly easier now.
+    This article is under construction and will be updated.
 
 
 Overview
