@@ -28,6 +28,13 @@ To denoise with the Altus GUI, fill in the image input boxes with their respecti
 
 To fill in the image paths, you can drag and drop your files into the file boxes, browse for files, type in the paths manually, or copy/paste from one box to another.  These input boxes support multi-layer (when enabled, the 'Select Layer' button to open the layer selection menu) and side-by-side (also known as stereo imagery, generated from a single seed) images.  More info here: https://help.innobright.com/inputs/side-by-side/
 
+Each input box has basic error checking visulized by the red or green tab on the left.  A green tab indicates both b0 and b1 are correct.  A red tab indicates there was some issue.  Hovering the mouse over the tab will show a tool tip explaining the error.
+
+.. Note::
+
+    Altus will still denoise even if input boxes have red tabs.  Its display only to notify the user of a potential problem.
+
+
 To switch an AOV input to use stereo click the option icon:
 
 .. image:: GUI_Change_Sidebyside.png
@@ -116,6 +123,18 @@ For more information on Altus output settings visit:  https://help.innobright.co
 
 
 Menu Bar:
+----------
 
-Click the 'Reset' buttom to revert the GUI to its default state.
+Click ``Run`` to begin denoising.  A pop up window will notify if an error is enountered.
+
+Click ``Reset`` to revert the GUI back to its default state.
+
+Click ``Import`` to import a config file.  
+
+Click ``export`` to export the current state of the GUI as a config file that is compatible with all Altus productions.  
+
+Click ``Settings`` to open the settings side-bar.
+
 The GUI can show your current license status in the top right corner.  A green light means your license is valid.
+
+Click ``?`` button to open a list of links to the help website.
