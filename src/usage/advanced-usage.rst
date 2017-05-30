@@ -89,12 +89,12 @@ This flag is intended for debugging purposes only and should not be used in prod
 ``--kc_1``
 ----------
 
-Color influence for small kernel.
+This value scales how much color (beauty) will influence the small (detail) kernel blur.
 
 ``--kc_2``
 ----------
 
-Color influence for large kernel.
+This value scales how much color (beauty) will influence the large (edge) kernel blur.
 
 ``--kc_3``
 ----------
@@ -109,15 +109,15 @@ Controls removal of residual noise.
 ``--kf``
 --------
 
-Controls the influence of feature AOVs (e.g. position, normals, etc).
+Controls the influence of feature AOVs (e.g. position, normals, etc) for all kernel sizes.
 Generally controls the trade-off between preserving edges and fine detail.
 
 
 ``--tile``
 --------
 
-Altus can internally divide, denoise, and combine tiles in order to denoise images that wouldn't otherwise fit in memory.  
-Generally this feature is more useful when using GPU's to denoise since GPU's usually have a limited and small amount of VRAM.
+Altus can internally divide, denoise, and combine tiles in order to denoise large images that wouldn't otherwise fit in memory.  
+Generally this feature is more useful when using GPU's to denoise since GPU's typically have a small amount of VRAM.  This causes large images to be impossible to denoise on GPU unless using tiling.
 
 ``--tile-size``
 --------
