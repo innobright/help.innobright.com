@@ -112,3 +112,19 @@ Controls removal of residual noise.
 Controls the influence of feature AOVs (e.g. position, normals, etc).
 Generally controls the trade-off between preserving edges and fine detail.
 
+
+``--tile``
+--------
+
+Altus can internally divide, denoise, and combine tiles in order to denoise images that wouldn't otherwise fit in memory.  
+Generally this feature is more useful when using GPU's to denoise since GPU's usually have a limited and small amount of VRAM.
+
+``--tile-size``
+--------
+
+Controls the max size of the internal tile.  Tiles will always fit the ratio of the input image.  
+
+``--firefly``
+--------
+
+Enables the firefly suppressor.  This will detect and reduce the spread of high energy pixels.  By default it's turned off. 
