@@ -11,7 +11,7 @@ The GUI is for those who have trouble with using the Altus command line. General
 
 The first time you use the GUI it will open the License Wizard which will gather basic information like your innobright.com username and whether you plan to register Altus with a license or evaluate the product first.
 
-.. image:: Intro_Wizard.png
+.. image:: ./gui/Intro_Wizard.png
    :scale: 80 %
    :align: center
 
@@ -20,7 +20,7 @@ USING THE GUI
 
 The Altus GUI is layed out with the focus on AOV inputs.
 
-.. image:: GUI_Layout.png
+.. image:: ./gui/GUI_Layout.png
    :scale: 60 %
    :align: center
 
@@ -37,7 +37,7 @@ Each input box has basic error checking visulized by the red or green tab on the
 
 To switch an AOV input to use stereo click the option icon:
 
-.. image:: GUI_Change_Sidebyside.png
+.. image:: ./gui/GUI_Change_Sidebyside.png
    :scale: 60 %
    :align: center
 
@@ -54,7 +54,7 @@ Running Altus from the GUI:
 
 To begin denoising, ensure that the inputs and settings are correct.  Then click 'Run'.  Altus will open a log sidebar if "Display Log in GUI" is enabled, all updates and any errors will be printed to this log.  A progress window will open durring denoising and will notify when denoising is complete.  
 
-.. image:: GUI_Run_Denoise.png
+.. image:: ./gui/GUI_Run_Denoise.png
    :scale: 60 %
    :align: center
 
@@ -63,11 +63,11 @@ Settings:
 
 The settings side-bar can be extended by clicking 'Settings' in the menu.  The settings are sorted into 3 categories:  Input to Altus, Runtime Settings, Output from Altus.
 
-.. image:: GUI_Settings.png
+.. image:: ./gui/GUI_Settings.png
    :scale: 60 %
    :align: center
 
-Input Settings:
+**Input Settings:**
 
 ``Use Layers``
 ------------------------
@@ -91,7 +91,7 @@ These must be specified
 Visit for more info: https://help.innobright.com/usage/animation/
 
 
-Runtime Settings:
+**Runtime Settings:**
 
 ``Write Log to file``
 ------------------------
@@ -115,7 +115,7 @@ For more information on filter settings visit:  https://help.innobright.com/usag
 These 3 options allow users to select which compute device to use when Altus denoises.  The GUI can select to use CPU only, run on an auto-selected GPU based on memory size, or manually select which compute device to use.  These options are in the settings window.  By default "Use CPU" is enabled.  If "Use CPU" is disabled then "Auto Select GPU" will be used.  Finally if both options are disabled you will be able to select a device from a list populated by Altus.  Note: When running in CUDA there will be only 1 platform.  OpenCL could have many platforms. 
 
 
-Output from Altus Settings:
+**Output from Altus Settings:**
 
 The GUI can set filter quality levels, preserve layers, and output prefiltered, preview or production filtered AOVs.
 
