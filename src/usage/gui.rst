@@ -15,7 +15,7 @@ The first time you use the GUI it will open the License Wizard which will gather
    :scale: 80 %
    :align: center
 
-USING THE GUI
+Using the GUI
 --------------
 
 The Altus GUI is layed out with the focus on AOV inputs.
