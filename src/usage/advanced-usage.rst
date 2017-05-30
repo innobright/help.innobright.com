@@ -122,9 +122,9 @@ Generally this feature is more useful when using GPU's to denoise since GPU's ty
 ``--tile-size``
 --------
 
-Controls the max size of the internal tile.  Tiles will always fit the ratio of the input image.  
+Controls the max size of the internal tile.  The tile-size given is an upper bound, the actual tile size will always be less than the tile-size in each axis.  If the tile-size is larger than the full image then it is clamped to the size of the image. 
 
 ``--firefly``
 --------
 
-Enables the firefly suppressor.  This will detect and reduce the spread of high energy pixels.  By default it's turned off. 
+Enables the firefly suppressor.  This will detect and reduce the spread of high energy pixels.  By default it's turned off.  Minor performance hit to enable.
