@@ -22,7 +22,7 @@ To create a Python virtualenv containing all dependencies. Run:
 
     fab build
 
-To actually create the Website. You can browse it locally by opening build/index.html in your Web browser.
+To actually create the Website. You can browse it locally by opening build/index.html in your Web browser, or by going into `build` and running `python3 -m http.server` to create a Web server that will properly serve files locally.
 
 To deploy, use
 
