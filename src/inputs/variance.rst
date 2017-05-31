@@ -24,21 +24,21 @@ Here is an example of a sample variance output from PBRT renderer.  The render's
 
 Sample variance can be specified using flags in CLI::
 
-    --rgb-var=<path to exr image>
-    --pos-var=<path to exr image>
-    --nrm-var=<path to exr image>
-    --cau-var=<path to exr image>
-    --vis-var=<path to exr image>
-    --extra-var=<path to exr image>
+    --rgb-variance=<path to exr image>
+    --pos-variance=<path to exr image>
+    --nrm-variance=<path to exr image>
+    --cau-variance=<path to exr image>
+    --vis-variance=<path to exr image>
+    --extra-variance=<path to exr image>
     --additional-var=<path to exr image>
 
 
 Sample variance can be specified using a config file::
 
-    rgb-var=<path to exr image>
-    pos-var=<path to exr image>
-    nrm-var=<path to exr image>
-    cau-var=<path to exr image>
-    vis-var=<path to exr image>
-    extra-var=<path to exr image>
-    additional-var=<path to exr image>
+    rgb-variance=<path to exr image>
+    pos-variance=<path to exr image>
+    nrm-variance=<path to exr image>
+    cau-variance=<path to exr image>
+    vis-variance=<path to exr image>
+    extra-variance=<path to exr image>
+    additional-variance=<path to exr image>
