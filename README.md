@@ -6,7 +6,7 @@ This Website is built with [Sphinx](http://sphinx-doc.org/).
 
 ### Using Fabric deploy script (recommended)
 
-Instructions below are for Ubuntu/Debian. This also works inside Windows Scripting Layer (WSL, i.e. Bash for Windows); it probably won't work inside any kind of normal Windows prompt.
+Instructions below are for Ubuntu/Debian. This also works inside Windows Subsystem for Linux (WSL, i.e. Bash for Windows); it probably won't work inside any kind of normal Windows prompt.
 
 The included [Fabric deploy script](http://www.fabfile.org/) will build and deploy the Website for you, provided you have permissions to the server/deploy location.
 
