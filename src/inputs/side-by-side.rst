@@ -4,7 +4,7 @@ Side-by-side images
 In many places in Altus' documentation, side-by-side images are referred to as "stereo" images.
 While these images are created using a renderer's stereoscopic image generation features, they are *not* actually stereoscopic images!  To avoid ambiguity we will refer to this type of image as side-by-side.
 
-Side-by-Side images are offered as an alternitive to rendering twice to provide Altus with 2 buffers containing different noise patterns.  You can render once using a stereo camera and Altus will interally divide the image into two buffers. The camera’s (eye) separation must be set to 0.0 so the left and right camera’s have the same location and their renders will be identical except for the noise pattern.
+Side-by-Side images are offered as an alternative to rendering twice to provide Altus with two buffers containing different noise patterns.  You can render once using a stereo camera and Altus will interally divide the image into two buffers. The camera’s (eye) separation must be set to 0.0 so the left and right camera’s have the same location and their renders will be identical except for the noise pattern.
 
 Here is an example of a side-by-side image:
 

@@ -16,6 +16,11 @@ Altus' denoised output will be severely degraded by using lossy image formats li
 All of Altus' internal processing is done in 32-bit floating point.
 If 16-bit floating point images were given, images will be truncated to 16-bit when written out.
 
-Deep EXR images are partially supported.
+Deep EXR images are partially supported, if they have been saved "flat" with average samples.
+Most renderers will output this by default.
+
+Multi-part EXR images (e.g. using deep samples from deep EXRs, or stereoscopic images) are not supported.
+
+Multilayer EXR images are supported; see :doc:`/inputs/multichannel-exrs`.
 
 If there are additional HDR image formats you would like Altus to support, please contact support.

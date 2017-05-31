@@ -34,3 +34,7 @@ Glossary
 
     VFX
         Abbreviation for "visual effects".
+
+    Maya Embedded Language
+    MEL
+        Maya's built-in scripting language

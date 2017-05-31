@@ -114,17 +114,17 @@ Generally controls the trade-off between preserving edges and fine detail.
 
 
 ``--tile``
---------
+----------
 
-Altus can internally divide, denoise, and combine tiles in order to denoise large images that wouldn't otherwise fit in memory.  
+Altus can internally divide, denoise, and combine tiles in order to denoise large images that wouldn't otherwise fit in memory.
 Generally this feature is more useful when using GPU's to denoise since GPU's typically have a small amount of VRAM.  This causes large images to be impossible to denoise on GPU unless using tiling.
 
 ``--tile-size``
---------
+---------------
 
-Controls the max size of the internal tile.  The tile-size given is an upper bound, the actual tile size will always be less than the tile-size in each axis.  If the tile-size is larger than the full image then it is clamped to the size of the image. 
+Controls the max size of the internal tile.  The tile-size given is an upper bound, the actual tile size will always be less than the tile-size in each axis.  If the tile-size is larger than the full image then it is clamped to the size of the image.
 
 ``--firefly``
---------
+-------------
 
 Enables the firefly suppressor.  This will detect and reduce the spread of high energy pixels.  By default it's turned off.  Minor performance hit to enable.

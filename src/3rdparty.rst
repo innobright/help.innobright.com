@@ -2,7 +2,7 @@ Integration with Third Party Software
 -------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Arnold <3rdparty/solidangle-arnold>
     Deadline <3rdparty/thinkbox-deadline>

@@ -7,7 +7,7 @@ Usage
     usage/setup
     usage/gui
     usage/animation
-    usage/filtering-aovs
-    usage/preserving-layers
+    usage/denoising-aovs
+    usage/output-options
     usage/advanced-usage
     usage/common-errors
