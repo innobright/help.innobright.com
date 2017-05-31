@@ -2,6 +2,8 @@
 
 This Website is built with [Sphinx](http://sphinx-doc.org/).
 
+When using Sphinx, see their [list of semantic markup](http://www.sphinx-doc.org/en/stable/markup/inline.html?highlight=role#other-semantic-markup) to mark up things like file names, GUI levels, command-line options, etc.
+
 ## Dependencies
 
 ### Using Fabric deploy script (recommended)
