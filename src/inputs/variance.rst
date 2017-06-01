@@ -1,12 +1,13 @@
 Variance
 ========
 
-Altus relies on variance to determine which areas of the render haven't converged and still contain noisy samples.  There are two types of variance Altus uses:  *sample variance* and *buffer variance*.
+Altus Denoiser relies on variance to determine which areas of a render contain noise that must be removed.
+There are two types of variance Altus uses: *buffer variance* and *sample variance*.
 
 Buffer Variance
 ---------------
 
-Buffer variance is calculated internally by Altus by analyzing the differences between the two buffers, b0 and b1.
+Buffer variance is calculated internally by Altus by analyzing the differences between the two input buffers, b0 and b1.
 
 Sample Variance
 ---------------
@@ -14,9 +15,11 @@ Sample Variance
 Some renderers can output sample variance, and this can be given to Altus.
 If not provided. Altus will construct an estimated sample variance.
 
-If you can produce a sample variance directly from the renderer you will need to render with a 1,1 box filter as the output cannot be averaged through an external reconstruction filter. It must be the exact information that the renderer outputs.
+For renderers that can output sample variance, you must render it with a 1,1 box filter.
+The output cannot be averaged through an external reconstruction filter.
 
-Here is an example of a sample variance output from PBRT renderer.  The render's beauty output (left) and the sample variance of the beauty (right):
+Here is an example of a sample variance output from PBRT renderer.
+The render's beauty output (left) and the sample variance of the beauty (right):
 
 .. image:: ./input/sample_variance.png
    :scale: 60 %
