@@ -1,4 +1,4 @@
 Manage Altus with Royal Render
 ------------------------------
 
-More information coming soon.
+http://www.royalrender.de/help8/index.html?InnobrightAltus.html
