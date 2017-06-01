@@ -2,7 +2,9 @@
 
 This document details changes to Altus.
 
-### Altus v1.8.3, 10 May 2017
+### Altus v1.8.3
+
+Released on 10 May 2017.
 
  * Fix bug introduced in 1.8.2 with animation format specifiers in filename's.  Parsing input filenames in animations will now work as before in 1.8.1.  Output filenames will now replace '#' and '%04d' format specifiers for animation.
 
