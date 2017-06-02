@@ -6,5 +6,5 @@ Overview
 
     overview/what-is-altus
     overview/why-denoise
-    overview/how-to-use-altus
+    overview/how-you-can-use-altus
     overview/system-requirements

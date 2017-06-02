@@ -1,5 +1,5 @@
-How to use Altus
-----------------
+How you can use Altus
+---------------------
 
 Altus Denoiser can be integrated into your production pipeline in several different ways.
 
