@@ -2,17 +2,24 @@
 
 This document details changes to Altus.
 
+### Altus v1.8.4
+
+Released on 30 May 2017.
+
+* Fix GUI bug where selecting images will convert the format specifier of all other images filenames, sometimes converting an already converted filename.
+* GUI paths will now show the "real" path when editing the textfield. The textfield will be converted upon edit finish. This way there is no uncertainty on what the path is to the image you orignally selected.
+
 ### Altus v1.8.3
 
 Released on 10 May 2017.
 
- * Fix bug introduced in 1.8.2 with animation format specifiers in filename's.  Parsing input filenames in animations will now work as before in 1.8.1.  Output filenames will now replace '#' and '%04d' format specifiers for animation.
+* Fix bug introduced in 1.8.2 with animation format specifiers in filename's.  Parsing input filenames in animations will now work as before in 1.8.1.  Output filenames will now replace '#' and '%04d' format specifiers for animation.
 
 ### Altus v1.8.2
 
  * New `--additional-0`, `--additional-0`, and `--additional-s` flags let you specify an AOV that will be denoised, but not used in consideration of filtering RGB. Note: as of 1.8.2, additional AOVs will not be saved unless `--filter-aov` is specified.
  * Black AOV inputs are bypassed to save time.
- * The denoised position output, before 1.8.2, was normalized to [0,1]. It is now restored to its original range.
+ * The denoised position output, before 1.8.2, was normgalized to [0,1]. It is now restored to its original range.
  * Minor GUI updates to support new features.
  * Issues with single channel images and layers have been resolved. Please contact us if you still have issues.
  * Altus for Linux is now built with GCC 6.3.
