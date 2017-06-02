@@ -1,6 +1,29 @@
-# Change Log
+# Whats New in Altus v1.8.4
 
-This document details changes to Altus.
+## Known issues
+
+These are known issues that will be fixed in a future release.
+
+ * Manually editing filepaths in the GUI to use format specifiers will cause Altus to be unable to revert to the original paths when switching animation on/off.  Its recommended to let Altus autoconvert the format specifier in paths.  If you find an issue in this workflow contact support@innobright.com to let us know!
+ * GUI does not support '#' symbols in the file path.  Please use '%01d' type specifier when working on animation sequences.
+ * If filtering a large image on GPU and CUDA fails, consider trying OpenCL on GPU.
+ * OpenCL and CUDA-related errors can be obtuse. If you encounter one you don't understand, contact support@innobright.com and we'll help.
+ * Bugs exist with images where the OpenEXR data window is not the same as the display window.
+ * OpenEXR images with data windows smaller than the display window are not preserved on file write. We expand the data window to match the display window. This does not effect filtering speed or file size.
+ * Normalized extra AOVs have both CLI and configuration file options, but these have no effect and those AOVs will be ignored.
+ * If Altus 1.8 encounters a licensing error while filtering, it will insert a watermark instead of quitting, regardless of `--force-continue`. This behavior is consistent with previous versions of Altus but may not be desired. Please make sure network connectivity to your licensing server is stable.
+ * Before Altus 1.8, running Altus with `--version` would print license status. In 1.8, this is broken, but will be fixed in a future release. The only way to determine license status is by running Altus on images.
+ * Altus for macOS requires macOS 10.11 (El Capitan) or later; in the future the minimum requirement will be macOS 10.9 (Mavericks).
+
+## ChangeLog
+
+### Altus v1.8.4, 1 June 2017
+ * New '--tile' flag lets you enable tiling in Altus. Altus now supports internally spliting the image into tiles to denoise.
+ * New '--tile-size' flag lets you set the maximum tile size.  
+ * New '--firefly' flag will enable the firefly suppressor.
+ * Fix GUI bug where selecting images will convert the format specifier of all other images filenames, sometimes converting an already converted filename.  
+ * GUI paths will now show the 'real' path when editing the textfield.  The textfield will be converted upon edit finish.  This way there is no uncertainty on what the path is to the image you orignally selected.
+ * GUI settings menu has been updated to reflect the new features: firefly suppressor and tiling.  
 
 ### Altus v1.8.4
 
