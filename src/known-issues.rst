@@ -6,8 +6,8 @@ This document details known issues and problems, and their workarounds, in the l
 These are typically not fixed because we have incomplete information on how to resolve them.
 However, the plan is to fix them in a future release.
 
-CLI
----
+Core
+----
 
 * If filtering a large image on GPU and CUDA fails or produces a black image, consider trying OpenCL on GPU. The OpenCL version of Altus is more resistant to failures. Innobright plans to discontinue general availability of the CUDA version of Altus in the future.
 * Bugs exist with images where the OpenEXR data window is not the same as the display window.
@@ -18,11 +18,7 @@ GUI
 
 * Manually editing file paths in the GUI to use format specifiers will cause Altus to be unable to revert to the original paths when switching animation on/off. It's recommended to let Altus autoconvert the format specifier in paths. If you find an issue in this workflow contact support@innobright.com to let us know!
 * GUI does not support '#' symbols in the file path. Please use "%01d" type specifier when working on animation sequences.
-
-Release engineering
--------------------
-
-* Altus for macOS requires macOS 10.11 (El Capitan) or later; in the future the minimum requirement will be macOS 10.9 (Mavericks).
+* The GUI will not display accurate license status until Altus is run on an image.
 
 UX
 ---
@@ -33,5 +29,5 @@ UX
 Licensing
 ---------
 
-* If Altus 1.8 encounters a licensing error while filtering, it will insert a watermark instead of quitting, regardless of `--force-continue`. This behavior is consistent with previous versions of Altus but may not be desired. Please make sure network connectivity to your licensing server is stable.
-* Before Altus 1.8, running Altus with `--version` would print license status. In 1.8, this is broken, but will be fixed in a future release. The only way to determine license status is by running Altus on images.
+* If Altus 1.8 encounters a licensing error while filtering, it will insert a watermark instead of quitting, regardless of :option:`--force-continue`. This behavior is consistent with previous versions of Altus but may not be desired. Please make sure network connectivity to your licensing server is stable.
+* Before Altus 1.8, running Altus with :option:`--version` would print license status. In 1.8, this is broken, but will be fixed in a future release. The only way to determine license status is by running Altus on images.
