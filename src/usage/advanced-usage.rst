@@ -122,7 +122,18 @@ Generally this feature is more useful when using GPU's to denoise since GPU's ty
 ``--tile-size``
 --------
 
-Controls the max size of the internal tile.  The tile-size given is an upper bound, the actual tile size will always be less than the tile-size in each axis.  If the tile-size is larger than the full image then it is clamped to the size of the image. 
+Controls the max size of the internal tile.  The tile-size given is an upper bound, the actual tile size will always be less than the tile-size in each diminsion.  Altus finds the subdivision for each axis independently such that the length of the tile in that axis is smaller than the tile-size maximum.  If the tile-size is larger than the full image then it is clamped to the size of the image.  By default the tile-size is set to 1024.  
+
+
+Example:
+
+You want to denoise an image with dimensions 960 x 540, but it's too large to fit in memory.  You know that any tile smaller than 400x400 will fit in memory so you specify tile-size=400.
+
+X axis: 960/2 = 480 is larger than the max tile-size of 400.  Next it will try 960/3 = 320 which is accepted since it's less than the max tile-size of 400. 
+
+Y axis: 540/2 = 270 which is accepted since it's smaller than 400.  
+
+Now the subdivisions are found in both axis, we can look at the accepted tile size: 320 x 270.  It will take 6 tiles at this tile-size to denoise the image.  
 
 ``--firefly``
 --------
