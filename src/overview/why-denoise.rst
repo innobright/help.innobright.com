@@ -1,7 +1,10 @@
 Why denoise?
 ------------
 
-When rendering using Monte Carlo ray tracing, the image will initially be noisy and over time it will converge to a high quality noiseless image.  Unfortunately physically based rendering in general can take a long time for a render to converge to a completely noise free image.  The render will need more samples in order for the image to converge and reduce noise.  Unfortunately more samples will take more time to render.  Here is an image showing the noise reduction as you increase the samples per pixel.
+When rendering using Monte Carlo ray tracing, the image will initially be noisy and over time it will converge to a high quality noiseless image.
+Unfortunately physically-based rendering in general can take a long time for a render to converge to a completely noise free image.
+The render will need more samples in order for the image to converge and reduce noise.
+Here is an image showing the noise reduction as you increase the samples per pixel.
 
 .. image:: ./images/render_sample_converge.gif
    :scale: 100 %
@@ -26,5 +29,5 @@ Unlike other denoisers, we specifically operate on Monte Carlo renders, using in
 This means we're able to give you unparalleled quality that denoising simply was not able to before.
 
 Unlike denoisers built into existing rendering software, we're not tied to specific vendors or pipelines.
-With polyplot pipelines using different rendering software, you don't need to settle for denoising only available with certain renderers, or quality of denoising output varying from different implementations.
+With polyglot pipelines using different rendering software, you don't need to settle for denoising only available with certain renderers, or quality of denoising output varying from different implementations.
 With Altus, you get a solution for your entire pipeline, with the ability to customize to your workflow.
