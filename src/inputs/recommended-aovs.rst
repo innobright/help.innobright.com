@@ -10,7 +10,7 @@ We recommend **seven** AOVs, though some are optional. Almost all physically-bas
 
 If you can't get these seven, you can still get reasonable quality by providing beauty, position, and normals.
 If your scene does not have certain elements such as caustics or specular, you can omit them.
-While you can provide all the AOVs your renderer can output, this will make Altus consume more time and memory, and usually for diminishing gains.
+Generally, denoised output increases with the more AOVs provided. However, while you can provide all the AOVs your renderer can output, this will make Altus consume more time and memory, and usually for diminishing gains.
 Innobright's research has found the seven discussed below maximize the trade-off between quality and speed across a wide range of images.
 
 By default, only the Beauty AOV is filtered.
