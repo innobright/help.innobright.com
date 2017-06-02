@@ -1,7 +1,7 @@
 Why denoise?
 ------------
 
-When rendering using Monte Carlo raytracing, the image will initially be noisy and overtime it will converge to a high quality noiseless image.  Unfortunately physically based rendering in general can take a long time for a render to converge to a completely noise free image.  The render will need more samples in order for the image to converge and reduce noise.  Unfortunately more samples will take more time to render.  Here is an image showing the noise reduction as you increase the samples per pixel.
+When rendering using Monte Carlo ray tracing, the image will initially be noisy and over time it will converge to a high quality noiseless image.  Unfortunately physically based rendering in general can take a long time for a render to converge to a completely noise free image.  The render will need more samples in order for the image to converge and reduce noise.  Unfortunately more samples will take more time to render.  Here is an image showing the noise reduction as you increase the samples per pixel.
 
 .. image:: ./images/render_sample_converge.gif
    :scale: 100 %
@@ -13,4 +13,11 @@ However sample count suffers from diminishing returns.  As sample counts get hig
    :scale: 100 %
    :align: center
 
-Denoising offers a solution.  Altus Denoiser gives you the quality you want, in a fraction of the time – at least 70% for pre-renders and 40% for final renders. Altus lets you generate fast, noisy renders with smaller samples per pixel (SPP) and filters them to produce high quality images/animation.  Altus also preserves depth of field and motion blur effects.
+Denoising offers an algorithmic shortcut to this problem. It makes the best use of your sampling budget.
+
+Altus is the world's first multi-platform denoiser specifically made for Monte Carlo renders. We make the most of your sampling budget, enabling you to generate fast, noisy renders with fewer samples per pixel, filtering them to produce high-quality images & animation in a fraction of the time.
+
+Unlike other denoisers, we specifically operate on Monte Carlo renders, using information from the rendering process.
+This means we're able to give you unparalleled quality that denoising simply was not able to before.
+
+Unlike denoisers built into existing rendering software, we're not tied to specific vendors or pipelines.
