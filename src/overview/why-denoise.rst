@@ -7,7 +7,12 @@ When rendering using Monte Carlo ray tracing, the image will initially be noisy 
    :scale: 100 %
    :align: center
 
-However sample count suffers from diminishing returns.  As sample counts get higher and higher, the difference in quality becomes more and more subtle.  We can visualize the convergence with a graph showing the relationship between noise level and the number of samples taken in a render.
+However, increasing sample count suffers from diminishing returns.
+Image quality typically improves by the square root of the number of samples;
+this means that as sample counts get higher and higher, the difference in quality becomes more and more subtle.
+You have to spend more time rendering to good to better, and even more time to go from better to great.
+
+We can visualize the convergence with a graph showing the relationship between noise level and the number of samples taken in a render.
 
 .. image:: ./images/Sample_Converge_Plot.png
    :scale: 100 %
@@ -21,3 +26,5 @@ Unlike other denoisers, we specifically operate on Monte Carlo renders, using in
 This means we're able to give you unparalleled quality that denoising simply was not able to before.
 
 Unlike denoisers built into existing rendering software, we're not tied to specific vendors or pipelines.
+With polyplot pipelines using different rendering software, you don't need to settle for denoising only available with certain renderers, or quality of denoising output varying from different implementations.
+With Altus, you get a solution for your entire pipeline, with the ability to customize to your workflow.
