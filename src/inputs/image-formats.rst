@@ -1,7 +1,7 @@
 Image formats
 -------------
 
-For the best quality possible, Altus operates on `high-dynamic range (HDR) images`__.
+For the best quality possible, Altus Denoiser operates on `high-dynamic range (HDR) images`__.
 The only HDR format currently supported is `OpenEXR`__ format.
 
 __ https://en.wikipedia.org/wiki/High-dynamic-range_imaging
