@@ -29,9 +29,9 @@ Released on 10 May 2017.
 Altus v1.8.2
 ------------
 
-* New :option:`--additional-0`, :option:`--additional-0`, and :option:`--additional-s` flags let you specify an AOV that will be denoised, but not used in consideration of filtering RGB. Note: as of 1.8.2, additional AOVs will not be saved unless `--filter-aov` is specified.
+* New :option:`--additional-0`, :option:`--additional-0`, and :option:`--additional-s` flags let you specify an AOV that will be denoised, but not used in consideration of filtering RGB. Note: as of 1.8.2, additional AOVs will not be saved unless :option:`--filter-aov` is specified.
 * Black AOV inputs are bypassed to save time.
-* The denoised position output, before 1.8.2, was normgalized to [0,1]. It is now restored to its original range.
+* The denoised position output, before 1.8.2, was normalized to [0,1], as this was needed internally. It is now restored to its original range.
 * Minor GUI updates to support new features.
 * Issues with single channel images and layers have been resolved. Please contact us if you still have issues.
 * Altus for Linux is now built with GCC 6.3.
