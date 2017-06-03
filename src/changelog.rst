@@ -14,6 +14,7 @@ Released on 30 May 2017.
 * Fix GUI bug where selecting images will convert the format specifier of all other images filenames, sometimes converting an already converted filename.
 * GUI paths will now show the "real" path when editing the textfield. The textfield will be converted upon edit finish. This way there is no uncertainty on what the path is to the image you orignally selected.
 * GUI settings menu has been updated to reflect the new features: firefly suppressor and tiling.
+* Fixed linking issue on macOS: zlib was dynamically being linked when it should have been linked statically. On some systems, the dynamically-linked executable may not have ran; the statically-linked executable should run anywhere.
 
 Altus v1.8.3
 ------------
