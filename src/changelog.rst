@@ -3,6 +3,13 @@ Change Log
 
 This document details changes to Altus.
 
+Altus v1.9.0
+------------
+
+Unreleased.
+
+* New flags for passing specular: :option:`--spc-0`, :option:`--spc-1`, and :option:`--spc-stereo`. Before 1.9, you can pass the specular AOV by the "extra" series of options. Beginning with 1.9, we prefer you use these named options instead. Configurations earlier than 1.9 will work with 1.9, but configurations with 1.9 and later will not work earlier versions of Altus.
+
 Altus v1.8.4
 ------------
 
