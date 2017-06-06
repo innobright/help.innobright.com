@@ -3,7 +3,7 @@ Denoise SolidAngle Arnold renders with Altus
 
 .. warning::
 
-    This article is under construction and will be updated.
+    This article is under construction and will be updated.  If you find any issues with the documentation please contact us at support@innobright.com
 
 
 Overview
@@ -61,7 +61,18 @@ Then switch to the AOV tab. This is where all the available AOVs will be listed.
 Saving AOVs
 ###########
 
-These added AOVs can be written to separate EXR images or to a multi-layer (multi-channel) EXR image. Both are compatible with Altus Denoiser. Arnold uses drivers to handle file output.
+All the elements and beauty pass will be saved in the default or specified directory.  The AOVs can be written to separate EXR images or to a multi-layer (multi-channel) EXR image. Both are compatible with Altus Denoiser. Arnold uses drivers to handle file output.
+
+Arnold offers an option to merge the AOVs and output a single multi-layer (also called multi-channel). To merge the aovs, Select default Arnold Driver in attribute editor. Under the tab scroll down to Advance Output. Click to append the parameters and check the Merge AOVs check box.
+
+.. image:: ./arnold/Arnold_Merge_AOVs.jpg
+   :scale: 100 %
+   :align: center
+
+.. Note::
+    For more details on custom AOVs and merging AOV please visit Solid Angle support site: https://support.solidangle.com/display/A5AFMUG/The+Attribute+Editor#TheAttributeEditor-MergeAOVs and https://support.solidangle.com/display/A5AFMUG/AOVs
+
+    For details on EXR or DeepEXR please see:  https://support.solidangle.com/display/A5AFMUG/EXR  
 
 
 Exporting Two Buffers
