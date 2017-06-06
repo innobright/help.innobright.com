@@ -55,7 +55,7 @@ Performance
 
 
 Quality vs PBR Denoisers
-=================
+========================
 
 Renderman
 #########
@@ -100,7 +100,7 @@ VRay
 
 
 Quality vs Image-space Denoisers
-=================
+================================
 
 .. Warning::  
 
@@ -120,7 +120,7 @@ Neat-Image
    Quality Differences: NeatImage denoiser was unable to remove the bright noise surrounding the ceiling light, even after using more extreme filter parameters. 
 
 Revision FX DE:Noiser
-#############
+#####################
 
 .. figure:: ./images/Cornell_Rev_Denoiser.png
    :scale: 150 %
@@ -130,3 +130,24 @@ Revision FX DE:Noiser
 .. Note::
 
    Quality Differences: Revision DE:noiser constantly overblured the image.
+
+
+Download links
+==============
+
+.. Note:: 
+    
+    Austin Martin Scene (altus, vray, corona, renderman): 
+        https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
+
+    Cornell Box Scene (altus, vray, corona, renderman): 
+        https://drive.google.com/open?id=0B1qS9hgD_Sn2dUlMYmt2RFVmb2c
+
+    Sponza Scene (altus, vray, corona, renderman): 
+        https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
+
+    Altus vs Image-space denoisers:  
+        [link URL]
+
+    All Scenes Combined:  
+        https://drive.google.com/open?id=0B1qS9hgD_Sn2RDRYWU5zUVVtT3M
