@@ -23,21 +23,21 @@ Exporting AOVs
 
 Recommended List of AOVs to use with Altus:
 
-+----------------+-----------------------+-------------------------------+
-| **AOV type**   | **Altus Input Name:** | **Corona AOV Name**           |
-+================+=======================+===============================+
-| World Position | pos                   | CGeometry_WorldPosition       |
-+----------------+-----------------------+-------------------------------+
-| Bump Normals   | nrm                   | CGeometry_NormalsShading      |
-+----------------+-----------------------+-------------------------------+
-| Visiblity      | vis                   | CShading_Shadows              |
-+----------------+-----------------------+-------------------------------+
-| Albedo         | alb                   | CShading_SourceColor          |
-+----------------+-----------------------+-------------------------------+
-| Reflection     | extra                 | CESSENTIAL_Reflect            |
-+----------------+-----------------------+-------------------------------+
-| Caustics       | cau (Optional)        | <Unknown>                     |
-+----------------+-----------------------+-------------------------------+
++----------------+-----------------------+-----------------------------------------+
+| **AOV type**   | **Altus Input Name:** | **Corona AOV Name**                     |
++================+=======================+=========================================+
+| World Position | pos                   | CGeometry_WorldPosition                 |
++----------------+-----------------------+-----------------------------------------+
+| Bump Normals   | nrm                   | CGeometry_NormalsShading                |
++----------------+-----------------------+-----------------------------------------+
+| Visiblity      | vis                   | CShading_Shadows                        |
++----------------+-----------------------+-----------------------------------------+
+| Albedo         | alb                   | CShading_SourceColor  or CSading_Albedo |
++----------------+-----------------------+-----------------------------------------+
+| Reflection     | extra                 | CESSENTIAL_Reflect                      |
++----------------+-----------------------+-----------------------------------------+
+| Caustics       | cau (Optional)        | <Unknown>                               |
++----------------+-----------------------+-----------------------------------------+
 
 
 How to Output AOVs that are compatible with Altus from 3ds Max
@@ -49,13 +49,13 @@ Add AOVs to save from Corona (3ds Max) by opening the Render Settings Window:
    :scale: 60 %
    :align: center
 
-Then switch to the Render Passes tab. This is where all the available Render Passes will be listed.  Clicking "Add" will open a selection window with available passes:
+Then switch to the Render Elements tab. This is where all the available Render Elements will be listed.  Clicking "Add" will open a selection window with available elements. You can select multiple elements by holding down ctrl while clicking. Select all the necessary elements:
 
 .. image:: ./corona/Corona_Render_Elements_Tab.png
    :scale: 100 %
    :align: center
 
-Add as many passes as you prefer.  Once all passes have been added, you need to specify where to save each AOV:
+Once all Render Elements have been added, they will appear in the Render Elements tab.  Now you need to specify where to save each AOV by selecting each pass and in the Selected Element Parameters panel: ensure the 'Enable' check box is checked to render the pass.  Click on the '...' browse button to set the location on disk to save that pass and to set the output image extension to 'EXR'.  Repeat this process for all the selected passes:
 
 .. image:: ./corona/Corona_Added_Render_Element.png
    :scale: 80 %
