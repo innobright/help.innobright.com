@@ -3,7 +3,7 @@ Denoise Render Legion Corona Render renders with Altus
 
 .. warning::
 
-    This article is under construction and will be updated.
+    This article is under construction and will be updated. If you find any issues with the documentation please contact us at support@innobright.com
 
 
 Overview
