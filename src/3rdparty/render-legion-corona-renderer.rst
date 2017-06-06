@@ -15,7 +15,7 @@ AOVs (Arbitrary Output Variables) provide a way to render any arbitrary shaded c
 
 Two images (called buffers) must be generated for each image. It's important that each buffer is rendered with a different sample seed so that they will have unique noise patterns. The variance between the two buffers is what Altus uses to remove noise. Without variance, there is not enough information to remove noise.
 
-For information on how to run Altus once the correct inputs have been created visit:  help.innobright.com/usage/
+For information on how to run Altus once the correct inputs have been created see :doc:`/usage`.
 
 
 Exporting AOVs
@@ -32,7 +32,7 @@ Recommended List of AOVs to use with Altus:
 +----------------+-----------------------+-----------------------------------------+
 | Visiblity      | vis                   | CShading_Shadows                        |
 +----------------+-----------------------+-----------------------------------------+
-| Albedo         | alb                   | CShading_SourceColor  or CSading_Albedo |
+| Albedo         | alb                   | CShading_SourceColor or CSading_Albedo  |
 +----------------+-----------------------+-----------------------------------------+
 | Reflection     | extra                 | CESSENTIAL_Reflect                      |
 +----------------+-----------------------+-----------------------------------------+
