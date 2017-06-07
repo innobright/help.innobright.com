@@ -28,7 +28,7 @@ Altus for Windows and Linux does not support Intel GPUs (please contact Innobrig
 
 ### CPU filtering with OpenCL
 
-For filtering on a CPU, we recommend that you [use the AMD OpenCL ICD][amd-opencl], available as part of their APP SDK. It will run on both Intel and AMD CPUs, albeit at a signficant performance loss.
+For filtering on a CPU, we recommend that you [use the AMD OpenCL ICD][amd-opencl], available as part of their APP SDK. It will run on both Intel and AMD CPUs, albeit at a significant performance loss.
 
 [amd-opencl]: http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk/
 
