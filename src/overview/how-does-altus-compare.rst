@@ -7,7 +7,7 @@ Innobright’s Altus is the world’s first multi-platform, Monte Carlo render d
 Most photorealistic renderers use this method of path generation;
 
 
-
+.. This will change the background color of a table cell. Used to highlight Altus features.
 .. role:: gbg
 
 .. raw:: html
@@ -27,7 +27,7 @@ Features
 ========
 
 +-----------------------------+-------------------------+--------------------------------+----------------------------------+--------------------------------+ 
-| **FEATURE**                 |:gbg:`Supported in Altus`| **VRay Denosier**              | **Corona Denosier**              | **RMan Denosier**              |
+| **FEATURE**                 |:gbg:`Supported in Altus`| **V-Ray Denosier**             | **Corona Denosier**              | **RMan Denosier**              |
 +=============================+=========================+================================+==================================+================================+ 
 | Standalone                  |        **Yes**          |              Yes               |              No                  |             Yes                |
 +-----------------------------+-------------------------+--------------------------------+----------------------------------+--------------------------------+ 
@@ -62,7 +62,9 @@ Performance
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
 
 +--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------------------------+
-| **Image Size**     |:gbg:`Altus Preview (GPU)`|:gbg:`Altus Preview (CPU)`| :gbg:`Altus Production (GPU)`    | :gbg:`Altus Production (CPU)`    |   **VRay Denosier**              | **Corona Denosier**              | **RMan Denosier**              |
+|                    |                                                                         Elapsed Time (mm:ss)                                                                                                                                     |
++--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------------------------+
+| **Image Size**     |:gbg:`Altus Preview (GPU)`|:gbg:`Altus Preview (CPU)`| :gbg:`Altus Production (GPU)`    | :gbg:`Altus Production (CPU)`    |   **V-Ray Denosier**             | **Corona Denosier**              | **RMan Denosier**              |
 +====================+==========================+==========================+==================================+==================================+==================================+==================================+================================+
 | 3000x3000          |         00:53            |         01:43            |              05:20               |              09:36               |             3:04                 |            2:49                  |         11:52                  |
 +--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+--------------------------------+
@@ -74,6 +76,9 @@ Performance
 
 Quality vs PBR Denoisers
 ========================
+
+This section contains comparisons to other denoisers. Each scene was rendered in Renderman, V-Ray, Corona and then denoised using their integrated denoisers.
+Then after rendering, all required AOVs were exported and used to denoise the beauty pass with Altus Denoiser.  All denoisers were used with default settings unless otherwise specified.
 
 Renderman
 #########
@@ -100,25 +105,25 @@ Corona
 
 .. Note::
 
-   Quality Differences: Corona leaves residual noise in shadowed areas.
+   Quality Differences: Corona left residual noise in shadowed areas.
 
-VRay
+V-Ray
 ####
 
 .. figure:: ./images/Altus-Vray_coronell_diff.png
    :scale: 150 %
    :align: center
 
-   Left: Altus Denoiser   Right: VRay Denoiser
+   Left: Altus Denoiser   Right: V-Ray Denoiser
 
 .. Note::
 
-   Quality Differences: VRay denoiser has trouble preserving detail in reflections.  VRay image has blury reflections on the cube and blurry refractions on the sphere.
+   Quality Differences: V-Ray denoiser has trouble preserving detail in reflections.  V-Ray image has blurry reflections on the cube and blurry refractions on the sphere.
 
 
 
-Quality vs Image-space Denoisers
-================================
+Quality vs Generic Film Denoisers
+=================================
 
 .. Warning::  
 
@@ -157,16 +162,16 @@ Download links
 
     .. Note:: 
         
-        Austin Martin Scene (altus, vray, corona, renderman): 
+        Austin Martin Scene (Altus, V-Ray, Corona, Renderman): 
             https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
 
-        Cornell Box Scene (altus, vray, corona, renderman): 
+        Cornell Box Scene (Altus, V-Ray, Corona, Renderman): 
             https://drive.google.com/open?id=0B1qS9hgD_Sn2dUlMYmt2RFVmb2c
 
-        Sponza Scene (altus, vray, corona, renderman): 
+        Sponza Scene (Altus, V-Ray, Corona, Renderman): 
             https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
 
-        Altus vs Image-space denoisers:  
+        Altus vs Generic film denoisers:  
             [link URL]
 
         All Scenes Combined:  
@@ -176,7 +181,7 @@ Download links
 Full Performance Table
 ======================
 
-This section contains performance/timing information that was collected on multiple computers with a range of specs from slow to fast.  Each scene was rendered in Renderman, VRay, Corona and then denoised using their integrated denoisers.
+This section contains performance/timing information that was collected on multiple computers with a range of specs from slow to fast.  Each scene was rendered in Renderman, V-Ray, Corona and then denoised using their integrated denoisers.
 Then after rendering, all required AOVs were exported and then used to denoise the beauty pass with Altus Denoiser.
 
 
@@ -185,7 +190,7 @@ Austin Martin Scene:
 
 .. Note::
 
-    This scene was rendered at 3000x3000 and then denoised.  Computer Spec:
+    This scene was rendered at 3000x3000 and then denoised.  This computer can be categorized as slow.  Computer Spec:
 
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
     | **OS**     | **CPU**                            | **RAM Memory**           | **GPU**                  |  **VRAM**                |
@@ -193,12 +198,14 @@ Austin Martin Scene:
     | Windows    |  Intel Core i7-4510U @2.0 - 2.6GHz |      8GB                 |  NVIDIA GeForce GTX 860M |    1GB                   |
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
 
++--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------+
+|                                               |                                                                       Elapsed Time (h:mm:ss)                                                                                    |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |      Renderer            | **Image Size**     |      Render Time         |   Renderer Denoise Time  |:gbg:`Altus Preview (GPU)`|:gbg:`Altus Preview (CPU)`| :gbg:`Altus Production (GPU)`    | :gbg:`Altus Production (CPU)`    |
 +==========================+====================+==========================+==========================+==========================+==========================+==================================+==================================+
 |       Renderman          | 3000x3000          |       0:30:51            |       0:20:42            |         01:25            |         03:20            |              06:21               |              15:54               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
-|       VRay               | 3000x3000          |       0:10:45            |       0:21:45            |         01:15            |         03:20            |              06:20               |              16:02               |
+|       V-Ray              | 3000x3000          |       0:10:45            |       0:21:45            |         01:15            |         03:20            |              06:20               |              16:02               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |       Corona             | 3000x3000          |       8:29:52            |       0:13:15            |         01:17            |         03:19            |              06:21               |              16:01               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
@@ -210,7 +217,7 @@ Cornell Box Scene:
 
 .. Note::
 
-    This scene was rendered at 1920x1080 and then denoised.  Computer Spec:
+    This scene was rendered at 1920x1080 and then denoised.  This computer can be categorized as fast.  Computer Spec:
 
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
     | **OS**     | **CPU**                            | **RAM Memory**           | **GPU**                  |  **VRAM**                |
@@ -218,12 +225,14 @@ Cornell Box Scene:
     | Windows    |Intel Xeon CPU E5-1650 v3 @ 3.50GHz |      32GB                |NVIDIA GeForce GTX TITAN  |    8GB                   |
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
 
++--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------+
+|                                               |                                                                    Elapsed Time (h:mm:ss)                                                                                       |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |      Renderer            | **Image Size**     |      Render Time         |   Renderer Denoise Time  |:gbg:`Altus Preview (GPU)`|:gbg:`Altus Preview (CPU)`| :gbg:`Altus Production (GPU)`    | :gbg:`Altus Production (CPU)`    |
 +==========================+====================+==========================+==========================+==========================+==========================+==================================+==================================+
 |       Renderman          | 1920x1080          |       0:01:21            |       0:00:56            |         00:08            |         00:22            |              00:27               |              01:52               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
-|       VRay               | 1920x1080          |       0:00:45            |       0:00:40            |         00:08            |         00:22            |              00:27               |              01:56               |
+|       V-Ray              | 1920x1080          |       0:00:45            |       0:00:40            |         00:08            |         00:22            |              00:27               |              01:56               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |       Corona             | 1920x1080          |       0:10:00            |       0:00:20            |         00:08            |         00:22            |              00:27               |              01:56               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
@@ -234,7 +243,7 @@ Sponza Scene:
 
 .. Note::
 
-    This scene was rendered at 950x540 and then denoised.  Computer Spec:
+    This scene was rendered at 950x540 and then denoised.  This computer can be categorized as mid-range.  Computer Spec:
 
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
     | **OS**     | **CPU**                            | **RAM Memory**           | **GPU**                  |  **VRAM**                |
@@ -243,12 +252,14 @@ Sponza Scene:
     +------------+------------------------------------+--------------------------+--------------------------+--------------------------+
 
 
++--------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+----------------------------------+----------------------------------+----------+
+|                                               |                                                                 Elapsed Time (h:mm:ss)                                                                                          |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |      Renderer            | **Image Size**     |      Render Time         |   Renderer Denoise Time  |:gbg:`Altus Preview (GPU)`|:gbg:`Altus Preview (CPU)`| :gbg:`Altus Production (GPU)`    | :gbg:`Altus Production (CPU)`    |
 +==========================+====================+==========================+==========================+==========================+==========================+==================================+==================================+
 |       Renderman          |  950x540           |       0:11:38            |       0:02:16            |         00:05            |         00:14            |              00:18               |              01:12               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
-|       VRay               |  950x540           |       0:03:02            |       0:00:06            |         00:05            |         00:14            |              00:18               |              01:12               |
+|       V-Ray              |  950x540           |       0:03:02            |       0:00:06            |         00:05            |         00:14            |              00:18               |              01:12               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
 |       Corona             |  950x540           |       0:01:47            |       0:00:16            |         00:05            |         00:14            |              00:18               |              01:12               |
 +--------------------------+--------------------+--------------------------+--------------------------+--------------------------+--------------------------+----------------------------------+----------------------------------+
