@@ -3,8 +3,7 @@
 How Does Altus Compare?
 -----------------------
 
-Innobright’s Altus is the world’s first multi-platform, Monte Carlo render denoising system. We let you generate fast, noisy renders with smaller samples per pixel (SPP) and filter them to produce high quality images & animation. We give you the quality you want, in a fraction of the time.  Altus is a post-processing filter to remove noise from renders created with physically-based Monte Carlo rendering methods.
-Most photorealistic renderers use this method of path generation;
+Innobright’s Altus is the world’s first multi-platform, Monte Carlo render denoising system. We let you generate fast, noisy renders with smaller samples per pixel (SPP) and filter them to produce high quality images & animation. We give you the quality you want, in a fraction of the time.
 
 
 .. This will change the background color of a table cell. Used to highlight Altus features.
@@ -162,20 +161,8 @@ Download links
 
     .. Note:: 
         
-        Austin Martin Scene (Altus, V-Ray, Corona, Renderman): 
-            https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
-
-        Cornell Box Scene (Altus, V-Ray, Corona, Renderman): 
-            https://drive.google.com/open?id=0B1qS9hgD_Sn2dUlMYmt2RFVmb2c
-
-        Sponza Scene (Altus, V-Ray, Corona, Renderman): 
-            https://drive.google.com/open?id=0B1qS9hgD_Sn2XzF6dGVmT3FJREE
-
-        Altus vs Generic film denoisers:  
-            [link URL]
-
-        All Scenes Combined:  
-            https://drive.google.com/open?id=0B1qS9hgD_Sn2RDRYWU5zUVVtT3M
+        Zip of all three above mentioned scenes: Austin Martin, Cornell Box, Sponza.  Each output from Altus, V-Ray, Corona and Renderman are included uncompressed and in exr format.
+            https://drive.google.com/file/d/0B1qS9hgD_Sn2V0ZHR3V4YmN4MGc/view?usp=sharing
 
 
 Full Performance Table
