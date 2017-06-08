@@ -162,7 +162,7 @@ Download links
     .. Note:: 
         
         Zip of all three above mentioned scenes: Austin Martin, Cornell Box, Sponza.  Each output from Altus, V-Ray, Corona and Renderman are included uncompressed and in exr format.
-            https://drive.google.com/file/d/0B1qS9hgD_Sn2V0ZHR3V4YmN4MGc/view?usp=sharing
+            https://drive.google.com/file/d/0B1qS9hgD_Sn2V0ZHR3V4YmN4MGc/view?usp=sharing  (392M)
 
 
 Full Performance Table
