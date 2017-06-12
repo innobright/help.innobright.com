@@ -1,5 +1,5 @@
 Denoise Next Limit Maxwell renders with Altus
----------------------------------------------
+=============================================
 
 .. warning::
 
@@ -13,7 +13,7 @@ Upgrade today!
 
 __ http://www.maxwellrender.com/
 
-.. include: overview-renderer.rst
+.. include:: renderer-overview.rst
 
 Exporting AOVs
 -----------------
