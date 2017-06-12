@@ -1,22 +1,31 @@
 Denoise Next Limit Maxwell renders with Altus
----------------------------------------------
+=============================================
 
 .. warning::
 
     This article is under construction and will be updated.  If you find any issues with the documentation please contact us at support@innobright.com
 
 Overview
-----------
+--------
+
+.. include:: renderer-overview.rst
+
+Maxwell 4.1 and later with Altus
+--------------------------------
 
 Maxwell 4.1 and later comes with Altus integrated. `See MaxwellRender.com for more information`__.
 Upgrade today!
 
 __ http://www.maxwellrender.com/
 
-.. include: overview-renderer.rst
+You can `watch a tutorial on YouTube about using Altus Denoiser in Maxwell 4.1`__.
+More technical details are available in the `Denoiser section of Maxwell's documentation`__.
+
+__ https://www.youtube.com/watch?v=05AgK4QnS8Y
+__ http://support.nextlimit.com/display/maxwell4/Denoiser
 
 Exporting AOVs
------------------
+--------------
 
 Recommended List of AOVs to use with Altus:
 
