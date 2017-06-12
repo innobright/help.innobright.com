@@ -1,4 +1,4 @@
-Altus Denoiser uses information between two rendered images to generate a high quality denoised image. This guide will explain how to setup and render the inputs to Altus. There are two concepts that Altus uses to generate denoised outputs:
+Altus Denoiser uses information from two rendered images to generate a high quality denoised image. This guide will explain how to setup and render the inputs to Altus. There are two concepts that Altus uses to generate denoised outputs:
 
 AOVs (Arbitrary Output Variables) provide a way to render any arbitrary shaded component into different images. Typically renderers will only produce a final color for each pixel of the image (known as the beauty pass, or RGB pass), but you can break out renders into their component parts such as indirect lighting, diffuse color, reflections, shadows, mattes, etc. and save them as files individually or layers as part of a multichannel/multilayer EXR. See :doc:`/inputs/recommended-aovs` for more information.
 
