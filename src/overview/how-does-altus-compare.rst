@@ -89,7 +89,7 @@ Renderman
 
 .. Note::
 
-   Quality Differences: Renderman has blotchy shadows near the tire rims and blotchy highlights on the grill.  
+   Quality Differences: Renderman tends to leave blotchy shadows in low light situations.  This becomes apparent if exposure is adjusted to clearly see the differences.  The shadows behind the rim, under the tire and inside the handle all appear blotchy.
 
 
 
