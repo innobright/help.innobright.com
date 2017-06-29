@@ -7,6 +7,10 @@ A command-line interface (CLI) let's you use Altus as a post-process tool.
 As a post-process tool, you can create discrete jobs in your render farm automation software to denoise frames after they have completed rendering.
 See :ref:`how Altus can integrate with popular render farm queue automation software packages <render-farm-queue-automation-toc>`.
 
+Altus on Windows also comes with a graphical user interface (GUI) that will help construct configuration files and run the CLI for you.
+It's meant for evaluation purposes.
+See :doc:`/usage/gui` for more information.
+
 Several renderers come with Altus integrated.
 With a click you can setup renders to generate all the information Altus requires and denoise your renders without additional setup.
 
