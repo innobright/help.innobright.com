@@ -27,6 +27,8 @@ Position
 ========
 
 World point position.
+If world position is unavailable, you can use z-depth, though your output will likely have decreased quality and/or artifacts.
+
 Specified using the ``pos`` series of options.
 
 Normals
