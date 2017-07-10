@@ -1,7 +1,7 @@
 Buffers
 -------
 
-Altus needs two input images for each scene, which we call call buffers b0 and b1.  Each of these buffers must be rendered with a different sample seed such that noise varies between images. Altus will use the difference in noise patterns to remove noise while preserving detail.  Two buffers are **required**.
+Altus needs two input images for each scene, which we call buffers b0 and b1.  Each of these buffers must be rendered with a different sample seed such that noise varies between images. Altus will use the difference in noise patterns to remove noise while preserving detail.  Two buffers are **required**.
 
 Internally Altus will combine the two buffers, providing a denoised output that matches the quality level of both buffers added together.  For example; if you want to denoise a render at 64spp (samples per pixel), then you can render twice at 32spp and Altus will output the equivalent or better of a 64spp render, in a fraction of the time.
 
