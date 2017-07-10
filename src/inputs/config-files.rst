@@ -1,12 +1,11 @@
 Config Files
--------------
+============
 
-
-Altus can be run using the command-line interface (CLI) along with passing arguments. An alternitive to passing all the arguments on the command line is to use a configuration file, or config file for short.  Config files are similar to Command line argument but are saved to disk and referenced in the command line as a singular argument.  Altus supports config files that define a the input images, filter settings and output options.  Using config files is the recommended way to use Altus.
+Altus can be run using the command-line interface (CLI) along with passing arguments. An alternative to passing all the arguments on the command line is to use a configuration file, or config file for short.  Config files are similar to Command line argument but are saved to disk and referenced in the command line as a singular argument.  Altus supports config files that define a the input images, filter settings and output options.  Using config files is the recommended way to use Altus.
 
 
 Specify Input Images
-####################
+--------------------
 
 Config files have a syntax that allow you to specify the path to an AOV:
 
@@ -42,7 +41,7 @@ Will tell Altus to use the ``P`` layer from images :file:`image.b0.exr` and :fil
 
 
 Filter Settings
-###############
+---------------
 
 Filter settings can also be defined in a config file:
 
@@ -57,7 +56,7 @@ For example::
     radius = 15
 
 Denoising Animation
-###################
+-------------------
 
 Denosing animations can be setup with config files:
 
