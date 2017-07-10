@@ -3,7 +3,7 @@ GUI
 
 .. Note::
 
-    This GUI was designed for demo purposes to evaluate Altus.  If you are using this GUI in a production setting, or have interest in a GUI that is more production oriented, then please drop us a line at [support contact here] so we can gauge interest and better support the production for that type of usage.
+    This GUI was designed for demo purposes to evaluate Altus.  If you are using this GUI in a production setting, or have interest in a GUI that is more production oriented, then please drop us a line at support.innobright.com so we can gauge interest and better support the production for that type of usage.
 
 At this time, the Altus' Graphical User Interface (GUI) is only available for Windows.
 
