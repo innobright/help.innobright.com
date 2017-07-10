@@ -1,5 +1,5 @@
-Config Files
-============
+Configuration Files
+===================
 
 Altus can be run using the command-line interface (CLI) along with passing arguments. An alternative to passing all the arguments on the command line is to use a configuration file, or config file for short.  Config files are similar to Command line argument but are saved to disk and referenced in the command line as a singular argument.  Altus supports config files that define a the input images, filter settings and output options.  Using config files is the recommended way to use Altus.
 
