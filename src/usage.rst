@@ -5,6 +5,7 @@ Usage
     :maxdepth: 2
 
     usage/setup
+    usage/configuration-files
     usage/gui
     usage/animation
     usage/denoising-aovs
