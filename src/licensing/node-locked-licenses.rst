@@ -1,8 +1,30 @@
 Node-locked licenses
---------------------
+====================
 
-Node-locked RLM licenses are not supported by Innobright.
+Node-locked licenses lock your usage of Altus to a computer with a specific MAC address.
+If the MAC address changes, you will no longer be able to use your license.
 
-To license Altus, you must run an RLM server on the same computer running Altus or elsewhere on your network.
+Node-locked licenses, unlike floating licenses, let you run as many copies of Altus as you'd like on that computer, only limited by the computing resources you have available (node-locked licenses are useful if you have multiple GPUs in a single computer).
+You do not need to run the RLM Licensing Server if you have a node-locked license.
 
-In the past, we have offered node-locked licenses; they caused IT headaches for both customers and Innobright alike, so we've permanently discontinued offering them.
+To use your node-locked license, you can do one of two things:
+
+Place license into same folder as Altus' executables
+----------------------------------------------------
+
+Place your license file in the same folder as the other Altus executables (e.g. altus-cli, altus-opencl).
+
+On Windows, by default this is :file:`C:\\Program Files\\Altus Denoiser\\bin`.
+
+Altus will automatically find your node-locked license.
+
+Set the ALTUS_LICENSE environment variable
+------------------------------------------
+
+If you wish to store your licenses in a separate directory from Altus, you can use the :envvar:`ALTUS_LICENSE` environment variable to point to fully-qualified path to the license file so Altus can find it.
+
+For example, if you place your licenses into :file:`C:\\Licenses`, and your license is called :file:`altus.lic`, then the contents of your environment variable must be ``C:\Licenses\altus.lic``.
+
+For instructions for setting environment variables on Windows, please see `How to set the path and environment variables in Windows`__.
+
+__ https://www.computerhope.com/issues/ch000549.htm
