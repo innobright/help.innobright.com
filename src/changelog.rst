@@ -9,6 +9,19 @@ Altus v1.9.0
 Unreleased.
 
 * New flags for passing specular: :option:`--spc-0`, :option:`--spc-1`, and :option:`--spc-stereo`. Before 1.9, you can pass the specular AOV by the "extra" series of options. Beginning with 1.9, we prefer you use these named options instead. Configurations earlier than 1.9 will work with 1.9, but configurations with 1.9 and later will not work earlier versions of Altus.
+* Multiple output images: Altus will be able to denoise and save AOVs as indivudual files in addition to a multilayer image.
+* Altus will now run in GPU mode by default.  We are replacing --gpu with --cpu.  All functionality will be the same but the defaults are switched.  
+* Ignore Alpha:  When filtering images its sometimes prefered to ignore the alpha channel.
+
+Altus v1.8.5
+------------
+
+Released on 13th July.
+
+* Improved support for negative and irregular data windows.  Data windows that differ accros b0 and b1 are supported now, although not recommended.
+* Faster previews for animations.  Disabled temporal filtering when denoising animations in preview mode.
+* Update the layer selection menu in the GUI.
+* Bug fix in the CLI where arguments passed were incorrectly parsed.  
 
 Altus v1.8.4
 ------------
