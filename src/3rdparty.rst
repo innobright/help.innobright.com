@@ -25,6 +25,7 @@ Integration with Third Party Software
 
     Arnold <3rdparty/solidangle-arnold>
     Corona <3rdparty/render-legion-corona-renderer>
+    Cycles <3rdparty/blender-institute-cycles>
     Guerilla Render <3rdparty/mercenaries-engineering-guerilla-render>
     Mantra <3rdparty/sidefx-mantra>
     Mental Ray <3rdparty/nvidia-mental-ray>
