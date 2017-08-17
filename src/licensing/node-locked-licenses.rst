@@ -4,10 +4,10 @@ Node-locked licenses
 Node-locked licenses lock your usage of Altus to a computer with a specific MAC address.
 If the MAC address changes, you will no longer be able to use your license.
 
-Node-locked licenses, unlike floating licenses, let you run as many copies of Altus as you'd like on that computer, only limited by the computing resources you have available (node-locked licenses are useful if you have multiple GPUs in a single computer).
+Node-locked licenses, unlike floating licenses, let you run as many copies of Altus as you'd like on that computer, only limited by the computing resources you have available (e.g. node-locked licenses are useful if you have multiple GPUs in a single computer).
 You do not need to run the RLM Licensing Server if you have a node-locked license.
 
-To use your node-locked license, you can do one of two things:
+To use your node-locked license, you can do one of two things: place the license in the same folder as Altus' executables, or set an environment variable pointing to the license.
 
 Place license into same folder as Altus' executables
 ----------------------------------------------------
