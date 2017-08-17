@@ -1,5 +1,5 @@
 Denoise Blender Institute Cycles renders with Altus
-============================================
+===================================================
 
 .. warning::
 
@@ -17,7 +17,7 @@ Exporting AOVs
 Recommended List of AOVs to use with Altus:
 
 +----------------+-----------------------+-------------------------------+
-| **AOV type**   | **Altus Input Name:** | **Cycles Render Pass Name**   |
+| **AOV type**   | **Altus Input Name**  | **Cycles Render Pass Name**   |
 +================+=======================+===============================+
 | World Position | pos                   | N/A (Custom Material Required)|
 +----------------+-----------------------+-------------------------------+
@@ -32,8 +32,8 @@ Recommended List of AOVs to use with Altus:
 | Caustics       | cau (Optional)        | N/A                           |
 +----------------+-----------------------+-------------------------------+
 
-How to Output AOVs that are compatible with Altus (from Maya)
-#############################################################
+How to Output AOVs that are compatible with Altus from Blender
+##############################################################
 
 Add AOVs to save from Blender by enabling the respective Passes in the Scene tab:
 
@@ -41,7 +41,10 @@ Add AOVs to save from Blender by enabling the respective Passes in the Scene tab
    :scale: 60 %
    :align: center
 
-This is where all the available Passes are listed. Add as many Passes as you prefer:  For more information on render passes see https://docs.blender.org/manual/ja/dev/render/blender_render/settings/passes.html
+This is where all the available Passes are listed.
+For more information on render passes see `Render Passes in the Blender Manual`__.
+
+__ https://docs.blender.org/manual/ja/dev/render/blender_render/settings/passes.html
 
 .. image:: ./blender/Blender_Selected_Render_Passes.png
    :scale: 80 %
@@ -49,16 +52,20 @@ This is where all the available Passes are listed. Add as many Passes as you pre
 
 .. Note::
 
-	Some recommended AOVs are not default render passes, such as the position pass.  In this case you will need to setup a custom material.
+    Some recommended AOVs are not default render passes, such as the position pass. In this case you will need to setup a custom material.
 
-	For a guide on setting up the position AOV visit:  http://vincentgires.com/blog/how-to-generate-position-pass-in-blender-cycles-or-internal/
+    For a guide on setting up the position AOV see `How to render a position pass in Blender Cycles`__.
+
+__ http://vincentgires.com/blog/how-to-generate-position-pass-in-blender-cycles-or-internal/
 
 Saving AOVs
 ###########
 
 These added AOVs can be written to separate EXR images or to a multi-layer (multi-channel) EXR image.  One option to save all passes is to use the compositor to access and save the AOVs after the render is complete.
 
-For more information on two ways to output render passes see: https://blender.stackexchange.com/questions/28740/how-can-i-render-all-render-passes-to-files-in-cycles
+For more information on two ways to output render passes see `How can I render all render passes to files in Cycles?`__.
+
+__ https://blender.stackexchange.com/questions/28740/how-can-i-render-all-render-passes-to-files-in-cycles
 
 
 Exporting Two Buffers
@@ -88,4 +95,6 @@ Render Once with Stereo
 
 You can render once using a stereo camera rig and Altus will divide the image into two buffers. The camera's (eye) separation should be set to 0.0 so the left and right camera's have the same location and their renders will be identical except for the noise pattern.
 
-Cycles supports rendering stereo.  For more information see: https://docs.blender.org/manual/en/dev/game_engine/camera/stereo.html
+Cycles supports rendering stereo.  For more information see `Stereo Camera in Blender's Manual`__.
+
+__ https://docs.blender.org/manual/en/dev/game_engine/camera/stereo.html
