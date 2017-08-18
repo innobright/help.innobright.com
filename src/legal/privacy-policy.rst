@@ -1,8 +1,6 @@
 Privacy Policy
 --------------
 
-Effective Date: January 9, 2017
-
 Your privacy is important to us. This policy explains the information practices of innoBright Technologies Inc., a Delaware corporation (together with its successors and assigns, “Innobright”, “we”, “us” or “our), defines the privacy options of each of our users (each, a “user”, “you” or “your”) and describes how your information is collected and used by us, the owner and operator of the www.innobright.com website (the “Site”) and our related sites, software products, tools and services (together with the Site collectively, the “Services”).
 
 By using or visiting the Services, whether or not you create an account with us, you agree to the collection and use of information in the manner described in this policy. Innobright shall have right at any time and without prior notice, at its sole discretion, to revise this policy. Such revisions and additions shall be effective immediately upon notice, which may be given by any means, including but not limited to posting the revised policy on the Site. You are responsible for reviewing the Site periodically for any modification to this policy.
@@ -76,3 +74,4 @@ HISTORICAL MODIFICATIONS
 
 The original version of this policy became effective on January 9, 2017. There have been no updated versions posted to date. When we update this policy, we will post the updated version on the Site, and you may request to review previous versions by contacting us at info@innobright.com so that you can view changes, additions and deletions.
 
+Last updated: 9 Jan 2017
