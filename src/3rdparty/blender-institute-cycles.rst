@@ -35,19 +35,28 @@ Recommended List of AOVs to use with Altus:
 How to Output AOVs that are compatible with Altus from Blender
 ##############################################################
 
-Add AOVs to save from Blender by enabling the respective Passes in the Scene tab:
+First, ensure that Cycles Render is selected as the active renderer:
+
+.. image:: ./blender/Blender_Render_Cycles.png
+   :scale: 60 %
+   :align: center
+
+
+In order to render AOVs with Cycles they must be enabled.  Blender refers to AOVs as Render Passes.  All the available Render Passes are listed under the Scene tab:
 
 .. image:: ./blender/Blender_Render_Passes.png
    :scale: 60 %
    :align: center
 
-This is where all the available Passes are listed.
 For more information on render passes see `Render Passes in the Blender Manual`__.
+
+
+With the recommed AOVs selected the Scene tab should look like this.
 
 __ https://docs.blender.org/manual/ja/dev/render/blender_render/settings/passes.html
 
-.. image:: ./blender/Blender_Selected_Render_Passes.png
-   :scale: 80 %
+.. image:: ./blender/Blender_Selected_Render_Passes_Cropped.png
+   :scale: 100 %
    :align: center
 
 .. Note::
@@ -61,7 +70,7 @@ __ http://vincentgires.com/blog/how-to-generate-position-pass-in-blender-cycles-
 Saving AOVs
 ###########
 
-These added AOVs can be written to separate EXR images or to a multi-layer (multi-channel) EXR image.  One option to save all passes is to use the compositor to access and save the AOVs after the render is complete.
+These added Render Passes can be written to separate EXR images or to a single multi-layer (multi-channel) EXR image.  One option to save all passes is to use Blender's compositor to access and save the Render Passes after the render is complete.
 
 For more information on two ways to output render passes see `How can I render all render passes to files in Cycles?`__.
 
@@ -71,17 +80,17 @@ __ https://blender.stackexchange.com/questions/28740/how-can-i-render-all-render
 Exporting Two Buffers
 ----------------------
 
-Altus requires two renders (called buffers) of the same scene to denoise properly. Cycles offers a few methods to render and save two buffers for Altus.
+Altus requires two renders (called buffers) of the same scene to denoise properly. Cycles offers a few methods to render and save two buffers for Altus:
 
 Render Twice
 ############
 
-You can render twice and change the sample seed between renders.  Cycles has a 'sample seed' setting that will change the random seed used and will give different resulting noise patterns.
+You can render twice and change the sample seed between renders.  Cycles has a 'sample seed' setting that will change the random seed used while rendering and will result in different noise patterns.
 
-First render and save the render passes of the first buffer.  After the first render is complete, the seed must be changed. To change the seed find the Sampling panel under Render tab.  Remember: the seed must be different than the seed used to render the first buffer.
+Begin by starting the first render.  Once the render is finished save the render passes for the first buffer.  Now the seed must be changed before starting the second render.  To change the seed find the Sampling panel under Render tab.  Remember: the seed must be different than the seed used to render the first buffer.  Once the seed is changed the second render can be started.
 
-.. image:: ./blender/Blender_Render_Seed.png
-   :scale: 60 %
+.. image:: ./blender/Blender_Render_Seed_Cropped.png
+   :scale: 100 %
    :align: center
 
 Both renders must be saved to disk along with their AOVs for Altus to use when denoising.
