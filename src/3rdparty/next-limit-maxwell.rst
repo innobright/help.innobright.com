@@ -11,7 +11,7 @@ __ http://www.maxwellrender.com/
 
 You can `watch a video tutorial about using Altus Denoiser in Maxwell 4.1`__.
 More technical details are available in the `Denoiser section of Maxwell's documentation`__.
-There's also a great `5 Tips on using the denoiser in Maxwell 4`__.
+There's also a great article `5 Tips on using the denoiser in Maxwell 4`__.
 
 __ https://www.youtube.com/watch?v=05AgK4QnS8Y
 __ http://support.nextlimit.com/display/maxwell4/Denoiser
