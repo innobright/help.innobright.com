@@ -23,8 +23,7 @@ On this site, you can find out information about Altus, like it's latest changes
     changelog
     known-issues
     glossary
-
-
+    getting-help
 
 
 Indices and tables
