@@ -8,20 +8,25 @@ Altus v1.9.0
 
 Unreleased.
 
-* New flags for passing specular: :option:`--spc-0`, :option:`--spc-1`, and :option:`--spc-stereo`. Before 1.9, you can pass the specular AOV by the "extra" series of options. Beginning with 1.9, we prefer you use these named options instead. Configurations earlier than 1.9 will work with 1.9, but configurations with 1.9 and later will not work earlier versions of Altus.
+* New flags for passing your renderer's specular pass: :option:`--spc-0`, :option:`--spc-1`, and :option:`--spc-stereo`. Before 1.9, you can pass the specular AOV by the "extra" series of options. Beginning with 1.9, we prefer you use these named options instead. Configurations earlier than 1.9 will work with 1.9, but configurations with 1.9 and later will not work earlier versions of Altus.
 * Multiple output images: Altus will be able to denoise and save AOVs as indivudual files in addition to a multilayer image.
-* Altus will now run in GPU mode by default.  We are replacing --gpu with --cpu.  All functionality will be the same but the defaults are switched.  
+* Altus will now run in GPU mode by default.  We are replacing --gpu with --cpu.  All functionality will be the same but the defaults are switched.
 * Ignore Alpha:  When filtering images its sometimes prefered to ignore the alpha channel.
+* The CUDA compete model of Altus is no longer publically distributed. OpenCL is faster and more reliable. If you need the CUDA version of Altus for some reason (e.g. if you're using an old NVIDIA GPU that does not support OpenCL), please contact support.
+* The different executables for altus (:command:`altus-cli`, :command:`altus-cpp`, :command:`altus-opencl`, and :command:`altus-cuda`) have been merged into one: :command:`altus-cli`. The one binary will internally select the best version of Altus that can run.
+* Device selection has been completely reworked, and you will need to adjust the platform id and device id you are using, as what worked before Altus 1.9 will not work with Altus 1.9 or later. Platform 0, device 0 is reserved for the fallback version of Altus, so what was platform 0 before is now platform 1. GPUs as reported by :option:`--query-devices` will be listed by how much memory they have, in descending order.
+* The fallback version of Altus, implemented in C++-only and previously available as :command:`altus-cpp`, is now integrated into Altus and no longer distributed separately. It will run when Altus cannot run on a faster device. To manually run the fallback, you can pass a platform and device index of 0.
+* Intel GPU support is enabled for all platforms (previously only available for macOS, or custom builds from Innobright). Altus will only pick an Intel GPU if there are no other GPUs on the system. A side effect of this, the Intel GPU will report having "0 GiB" memory. You can manually select your Intel GPU by finding out its platform and device indices using the :option:`--query-devices` option, and then passing it to :option:`--platform-id` and :option:`--device-id` respectively.
 
 Altus v1.8.5
 ------------
 
 Released on 13th July.
 
-* Improved support for negative and irregular data windows.  Data windows that differ accros b0 and b1 are supported now, although not recommended.
+* Improved support for negative and irregular data windows.  Data windows that differ across b0 and b1 are supported now, although not recommended.
 * Faster previews for animations.  Disabled temporal filtering when denoising animations in preview mode.
 * Update the layer selection menu in the GUI.
-* Bug fix in the CLI where arguments passed were incorrectly parsed.  
+* Bug fix in the CLI where arguments passed were incorrectly parsed.
 
 Altus v1.8.4
 ------------
