@@ -25,7 +25,7 @@ The render's beauty output (left) and the sample variance of the beauty (right):
    :scale: 60 %
    :align: center
 
-Sample variance can be specified using flags in CLI::
+Sample variance can be specified using flags in CLD::
 
     --rgb-variance=<path to exr image>
     --pos-variance=<path to exr image>

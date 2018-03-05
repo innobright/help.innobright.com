@@ -12,7 +12,7 @@ Here is an example of a side-by-side image:
    :scale: 60 %
    :align: center
 
-To specify an input to altus is a side-by-side image simply use the set of CLI flags::
+To specify an input to altus is a side-by-side image simply use the set of CLD flags::
 
     --rgb-stereo= the file path of the beauty pass EXR image - the file must be a stereo (side-by-side) image. This option removes the need to specify '--rgb-0' or '--rgb-1' (optional).
     --pos-stereo= the file path of the world position pass EXR image. The file must be a stereo image. This option removes the need to specify '--pos-0' or '--pos-1' (optional).
