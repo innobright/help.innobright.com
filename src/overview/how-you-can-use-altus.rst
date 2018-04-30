@@ -3,12 +3,11 @@ How you can use Altus
 
 Altus Denoiser can be integrated into your production pipeline in several different ways.
 
-A command-line denoiser (included in Altus ServerPro) let's you use Altus as a post-process tool.
+Altus CLD:  A command-line denoiser (included in Altus ServerPro) let's you use Altus as a post-process tool.
 As a post-process tool, you can create discrete jobs in your render farm automation software to denoise frames after they have completed rendering.
 See :ref:`how Altus can integrate with popular render farm queue automation software packages <render-farm-queue-automation-toc>`.
 
-Altus on Windows also comes with a graphical user interface (Altus Studio) that will help construct configuration files and run the command-line denier (CLD) for you.
-It's meant for evaluation purposes.
+Altus Studio: A graphical user interface that helps you manage your Altus projects with an interactive image viewer.
 See :doc:`/usage/gui` for more information.
 
 Several renderers come with Altus integrated.

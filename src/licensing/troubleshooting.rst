@@ -19,12 +19,19 @@ If you have a floating license:
 
 1. Do you have the environment variables set correctly? There is one variables that need to be set: ALTUS_LICENSE should point to the port and hostname/IP address of your RLM server.
 
+If you are using a plugin/integrated version of Altus:
+
+1. Ensure that you bought/recieved the correct product license.  For example, Altus-Studio licenses will not activate the Altus-Redshift integrated plugin.
+
+
 I bought a license, but Altus is still running in evaluation mode?
 ------------------------------------------------------------------
 
-This problem can manifest itself in more than one way;
+This problem can manifest itself in more than one way and depends on floating/node-locked licenses:
 
-1. You have not set the altus_LICENSE env variable.
+If you have floating license:
+
+1. You have not set the ALTUS_LICENSE env variable.
 This needs to be set to port#@ipaddress or port#@webaddress or port#@machinename of you license server. If you are using the same machine that you will be running the altus on as your license server this needs to be set to port#@127.0.0.1
 
 The port can be changed in the license file by changing the number on the line with the mac address. The default is 5053
@@ -38,6 +45,9 @@ Given the way that our software uses your hardware by accessing the GPU and or C
 The only known case of this problem:
 Avast
 
-This will be updated as more issues are identified.
+If you have Node-Locked license:
 
-More information coming soon.
+1.  You placed the node-locked file in the wrong directory.  It must be placed in the working directory of the denoiser.  For standalone products (Altus Studio, Altus-CLD) this is the same directory as the executable.  For plugins/integrations it depends on the usage and developers of the program.
+
+2.  If you use ALTUS_LICENSE to point to the license file, make sure it's path is correct.
+

@@ -3,12 +3,23 @@ Change Log
 
 This document details changes to Altus.
 
-Altus v1.9.0
+Altus v2.0.0
 ------------
 
-Unreleased.
+Released 14th March
 
-* New flags for passing your renderer's specular pass: :option:`--spc-0`, :option:`--spc-1`, and :option:`--spc-stereo`. Before 1.9, you can pass the specular AOV by the "extra" series of options. Beginning with 1.9, we prefer you use these named options instead. Configurations earlier than 1.9 will work with 1.9, but configurations with 1.9 and later will not work earlier versions of Altus.
+* Change standard output to colorize warnings/errors in windows
+* Added sublicenses to products
+* Introduced Altus-Studio, a GUI only version
+* Introduced Altus-ServerPro, a bundled GUI and CLD (command-line denoiser)
+* OpenCL overhead reduction
+* Fix bug for config files saving/loading incorrectly from Altus-Studio (GUI)
+
+Altus v1.9.x
+------------
+
+Released 1st January
+
 * Multiple output images: Altus will be able to denoise and save AOVs as indivudual files in addition to a multilayer image.
 * Altus will now run in GPU mode by default.  We are replacing --gpu with --cpu.  All functionality will be the same but the defaults are switched.
 * Ignore Alpha:  When filtering images its sometimes prefered to ignore the alpha channel.

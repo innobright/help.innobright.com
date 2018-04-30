@@ -3,151 +3,127 @@ GUI
 
 .. Note::
 
-    This GUI was designed for demo purposes to evaluate Altus.  If you are using this GUI in a production setting, or have interest in a GUI that is more production oriented, then please drop us a line at support.innobright.com so we can gauge interest and better support the production for that type of usage.
+    This documentation is for the updated Altus 1.9.0+ GUI.
 
-At this time, the Altus Studio (Graphical User Interface / GUI) is only available for Windows.
+At this time, the Altus' Graphical User Interface (GUI) is available for Windows, Linux and MacOS.  
 
-Altus Studio is for those who have trouble with using the Altus command line. Generally, we recommend that if you can use the command line directly, you use that instead.
+The GUI is for those who have trouble with using the Altus command line. Generally, we recommend that if you can use the command line directly, you use that instead.
 
-The first time you use Altus Studio it will open the License Wizard which will gather basic information like your innobright.com username and whether you plan to register Altus with a license or evaluate the product first.
-
-.. image:: ./gui/Intro_Wizard.png
-   :scale: 80 %
-   :align: center
 
 Using the GUI
 --------------
 
-Altus Studio is laid out with the focus on AOV inputs.
+The Altus GUI has a layout of the input settings on the left panel, the image viewer in the middle, and output settings on the right panel.  Animation settings can be found on the bottom.
 
 .. image:: ./gui/GUI_Layout.png
    :scale: 60 %
    :align: center
 
-To denoise with Altus Studio, fill in the image input boxes with their respective image paths and click run.  You can add more input boxes by clicking 'Add AOV' and selecting the type of AOV.  If you are unsure about the AOV type then select 'extra'.  For a list of recommended AOVs see :doc:`/inputs/recommended-aovs`.
+To denoise with the Altus GUI, fill in the inputs section on the top-left with all AOV images, then click "Start Denoiser".  You can add more inputs by drag/drop files into the input list, or by using the import wizard (add images to project).  To add extra AOV passes just clicking 'Add Extra AOV' or 'Add AOV to Denosier'.  Inputs can be rearranged by dragging.  For a list of recommended AOVs see :doc:`/inputs/recommended-aovs`.
 
-To fill in the image paths, you can drag and drop your files into the file boxes, browse for files, type in the paths manually, or copy/paste from one box to another.  These input boxes support multi-layer (when enabled, the 'Select Layer' button to open the layer selection menu) and side-by-side (also known as stereo imagery, generated from a single seed) images. See :doc:`/inputs/side-by-side`.
+All input passes support multi-layer and side-by-side (also known as stereo imagery, generated from a single seed) images. See :doc:`/inputs/side-by-side`.  Layers will be imported automatically and will be treated as a separate input in the inputs list.  See :doc:`/inputs/multichannel-exrs`.
 
-Each input box has basic error checking visualized by the red or green tab on the left.  A green tab indicates both b0 and b1 are correct.  A red tab indicates there was some issue.  Hovering the mouse over the tab will show a tool tip explaining the error.
+Each input and pass has basic error checking visualized by the red/grey/green tab on the left side of the input.  If the entire pass is green, then it's valid and will be used in denoiser.  If it is grey or red, it's either disabled or incorrect.  A warning icon will appear on image inputs that point to files that dont exist.  Altus GUI automatically skips passes that are invalid.
+
+Output images/layers are displayed in the right side panel and will update as Altus settings are changed for feedback.
 
 .. Note::
 
-    Altus will still denoise even if input boxes have red tabs.  It's displayed only to notify the user of a potential problem.
-
-
-To switch an AOV input to use side-by-side imagery click the option icon:
-
-.. image:: ./gui/GUI_Change_Sidebyside.png
-   :scale: 60 %
-   :align: center
+    Altus will still denoise even if input boxes have red tabs.  It's displayed only to notify the user of a potential problem.  All red/grey inputs will be skipped while denoising and quality will be subpar.
 
 
 Configuration files
 -------------------
 
-You can import config files into Altus Studio.  Drag and drop the config file over the top header bar to import or click the 'Import' button from the menubar.  All AOV inputs will be created and settings will be updated to match the config file.
-You can export config files from Altus Studio.  Once you are satisfied with the settings and added AOVs, click the 'Export' button from the menubar and specify the export cfg name.
+You can import config files into the GUI.  Click the 'Load (Config File)' button from the file menu-bar.  All AOV inputs will be created and settings will be updated to match the config file.  You can export config files from the GUI.  Once you are satisfied with the settings and added AOVs, click the 'Save (Config File)' or 'Save As' button from the menu-bar and specify the export cfg name.
 
 
 Running Altus from the GUI
 --------------------------
 
-To begin denoising, ensure that the inputs and settings are correct.  Then click 'Run'.  Altus will open a log sidebar if "Display Log in GUI" is enabled, all updates and any errors will be printed to this log.  A progress window will open during denoising and will notify when denoising is complete.
+To begin denoising, ensure that the inputs and settings are correct.  Then click 'Start Denosier'.  Altus will display all updates and any errors in the Altus Console.  The top info-bar will display a progress bar denoting the progress on the current frame, the bottom animation-bar will display a progress bar denoting progress within the entire animation sequence.  Altus overlays a square indicator to display the tile that is currently being denoised.
 
 .. image:: ./gui/GUI_Run_Denoise.png
    :scale: 60 %
    :align: center
 
+Import Wizard
+-------------
+
+Altus GUI features an import wizard to simplify the import process.  To open click "Add Images" from the drop down file menu-bar.  The wizard displays commonly used settings and features an input sorter based on pattern matching.  All import settings are accessible from the settings.  
+
+.. image:: ./gui/GUI_ConfigFiles.png
+   :scale: 100 %
+   :align: center
+
+
+.. Note::
+    
+    We have 30 second walkthroughs on youtube.
+
+    Watch them here:
+
+    https://www.youtube.com/watch?v=ETY5f7xtQpo
+
+    https://www.youtube.com/watch?v=6OmUxZPuom0
+
+    https://www.youtube.com/watch?v=l9hTv4miCAk
+
+
 Settings
 --------
 
-The settings side-bar can be extended by clicking 'Settings' in the menu.  The settings are sorted into 3 categories:  Input to Altus, Runtime Settings, Output from Altus.
+All settings are exposed in the panels.  Input settings are on the left panel and animation bar at the bottom.  Output settings are on the right panel.  The import wizard has pattern matching keys that can be changed.
 
-.. image:: ./gui/GUI_Settings.png
-   :scale: 60 %
-   :align: center
 
-Input Settings
---------------
+Force Continue
+##############
 
-Use Layers
+This option is displayed but not used in the GUI.  It will be loaded/saved from config files.  
+
+Use Tiling
 ##########
 
-Enable this option when working with multilayer input EXRs.  Once enabled Altus will ask which layer to use when adding new images.  The format required for layers is "Filename.exr::layername".
-See :doc:`/inputs/multichannel-exrs`.
-
+This option enables/disables tiling in the GUI.  Tiling is always slower than denoising the entire frame at once, but it offers benifits of lower memory usage and quicker visual updates as each tile is denoised.  Combine with max-tile size to find the largest tile possible with your memory/VRAM restrictions.  
 
 Animation
 #########
 
-This option will allow Altus to denoise in animation mode with temporal filtering enabled.  Enabling this option will cause all AOV paths to update with an automatically generated format specifier, eg. '%04d'.  Disabling this option will cause
-the path to revert to the original path without the format specifier.  Editing the path will cause the automatically generated format specifier to revert back to the original path.  Once editing is complete the format specifier will auto update again.
+This option will allow Altus to denoise in animation mode with temporal filtering enabled.  Enabling this option will cause all AOV paths to update with an automatically generated format specifier, eg. '####'.
 
-You can also edit the paths and specify the format specifier manually.  Once this is done, Altus will be unable to revert back to the original file path when the Animation option is disabled.  Altus will not try to convert a path that already has a format specifier.
-
-'Start-Frame' 'End-Frame'
-These must be specified
+If animation is enabled, then 'Start-Frame' 'End-Frame' must also be specified to avoid errors. 
 
 'Frame-Radius' is the number of adjacent frames to look at when denoising animation sequences.  By default it is set to 1.
 
 See :doc:`/usage/animation`.
 
 
-Runtime Settings
-----------------
-
-Write Log to file
-#################
-
-This option enables writing to a log file that will be located in the specified output folder.
-
-Display Log to File
-###################
-
-This option will enable a log window which is located on the right side-bar and will update as Altus executes.
-
 Filter Settings
-###############
+---------------
 
 For more information on filter settings see :doc:`/usage/advanced-usage`.
 
-Select Compute Device
-#####################
+
+Device Settings
+###############
 
 These 3 options allow users to select which compute device to use when Altus denoises.
 You can select
 
-1. use CPU only
-2. run on an auto-selected GPU based on memory size
-3. manually select which compute device to use.  These options are in the settings window.
-
-By default "Use CPU" is enabled.  If "Use CPU" is disabled then "Auto Select GPU" will be used.  Finally if both options are disabled you will be able to select a device from a list populated by Altus.
-
-Note: When using CUDA there will be only 1 platform. OpenCL could have many platforms.
+1. Autoselect device only
+2. Force to auto-selected GPU based on memory size
+3. Manually select which compute device to use.
 
 
 Output from Altus Settings
 ##########################
 
-Altus Studio can set filter quality levels, preserve layers, and output prefiltered, preview or production filtered AOVs.
+The GUI can set filter quality levels, preserve layers, and output preview or production filtered AOVs.
 
 For more information on Altus output settings see :doc:`/usage/output-options`.
 
+Known Issues
+------------
 
-Menu Bar
---------
-
-Click ``Run`` to begin denoising.  A pop up window will notify if an error is encountered.
-
-Click ``Reset`` to revert Altus Studio back to it’s default state.
-
-Click ``Import`` to import a config file.
-
-Click ``Export`` to export the current state of Altus Studio as a config file that is compatible with all Altus productions.
-
-Click ``Settings`` to open the settings side-bar.
-
-Altus Studio can show your current license status in the top right corner.
-A green light means your license is valid.
-
-Click ``?`` button to open a list of links to the help website.
+Image size and memory size reporting is disabled in linux.
+Occasionally the image viewer will not update after importing.

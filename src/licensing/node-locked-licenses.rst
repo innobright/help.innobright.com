@@ -7,12 +7,12 @@ If the MAC address changes, you will no longer be able to use your license.
 Node-locked licenses, unlike floating licenses, let you run as many copies of Altus as you'd like on that computer, only limited by the computing resources you have available (e.g. node-locked licenses are useful if you have multiple GPUs in a single computer).
 You do not need to run the RLM Licensing Server if you have a node-locked license.
 
-To use your node-locked license, you can do one of two things: place the license in the same folder as Altus' executables, or set an environment variable pointing to the license.
+To use your node-locked license, you can do one of two things: place the license in the working directory (usually the same folder as Altus' executables), or set an environment variable pointing to the license.
 
 Place license into same folder as Altus' executables
 ----------------------------------------------------
 
-Place your license file in the same folder as the other Altus executables (e.g. altus-cli, altus-opencl).
+Place your license file in the same folder as the other Altus executables.
 
 On Windows, by default this is :file:`C:\\Program Files\\Altus Denoiser\\bin`.
 
