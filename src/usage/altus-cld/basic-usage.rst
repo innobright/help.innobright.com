@@ -4,10 +4,10 @@ Basic usage
 
 Overview
 ########
-.. include:: ../3rdparty/renderer-overview.rst
+.. include:: ../../3rdparty/renderer-overview.rst
 
 
-This guide will explain how to denoise a given scene and adjust some filter settings.  Start by downloading the demo scene we will be using:  <link>
+This guide will explain how to denoise a given scene and adjust some filter settings.  Start by downloading the demo scene we will be using:  <link will be posted soon>
 
 
 Demo Contents
@@ -26,33 +26,33 @@ One of the beauty render (b0):
 Denoise the Demo Scene:
 ##########################
 
-To start lets denoise the demo scene using default Altus settings.  First check that Altus has been setup properly, see: :doc:`/usage/setup`.
+To start lets denoise the demo scene using default Altus settings.  First check that Altus has been setup properly, see: :doc:`/usage/altus-cld/setup`.
 
 Setting up the config file
 ---------------------------
 
-The easist way to run Altus is by using a config file.  Config files (.cfg) allow us to define the image paths along with any filter settings.  In this guide we will be using a config file.  For more info see :doc:`/inputs/config-files`.
+The easist way to run Altus is by using a config file.  Config files (.cfg) allow us to define the image paths along with any filter settings.  In this guide we will be using a config file.  For more info see :doc:`/usage/altus-cld/configuration-files`.
 
 
 First to define in a config file are the paths to the b0, b1 renders.  Lets start with the beauty:
 
 For example::
 
-    rgb-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    rgb-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
+    rgb-0=C:\Example\Files\Pass 1\scene_render.exr
+    rgb-1=C:\Example\Files\Pass 2\scene_render.exr
 
 Now we can add the position pass and normals::
 
-    pos-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
+    pos-0=C:\Example\Files\Pass 1\scene_render_worldPosition.exr
+    pos-1=C:\Example\Files\Pass 2\scene_render_worldPosition.exr
 
-    nrm-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    nrm-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    nrm-0=C:\Example\Files\Pass 1\scene_render_normals.exr
+    nrm-1=C:\Example\Files\Pass 2\scene_render_normals.exr
 
-Finally, we rendered out an AOV for reflections.  Lets add that as an extra AOV to Altus::
+Finally, we rendered out an AOV for reflections.  Lets add that as an extra AOV to Altus.  You can add as many extra AOVs to Altus, each AOV will increase the denoise quality::
 
-    extra-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    extra-0=C:\Example\Files\Pass 1\scene_render_reflections.exr
+    extra-1=C:\Example\Files\Pass 2\scene_render_reflections.exr
 
 Now that we defined all the input images, we should specify where the output will be saved.  There are a couple options for that, we will append ''--out-dir'' to the config file::
 
@@ -61,14 +61,14 @@ Now that we defined all the input images, we should specify where the output wil
 
 All together the final config file should look like::
 
-    rgb-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    rgb-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    nrm-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    nrm-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    rgb-0=C:\Example\Files\Pass 1\scene_render.exr
+    rgb-1=C:\Example\Files\Pass 2\scene_render.exr
+    pos-0=C:\Example\Files\Pass 1\scene_render_worldPosition.exr
+    pos-1=C:\Example\Files\Pass 2\scene_render_worldPosition.exr
+    nrm-0=C:\Example\Files\Pass 1\scene_render_normals.exr
+    nrm-1=C:\Example\Files\Pass 2\scene_render_normals.exr
+    extra-0=C:\Example\Files\Pass 1\scene_render_reflections.exr
+    extra-1=C:\Example\Files\Pass 2\scene_render_reflections.exr
     out-dir=C:\tmp\output
 
 
@@ -95,7 +95,7 @@ My denoised result:
 Basic Filter Settings:
 ######################
 
-Once you are confortable running Altus, you can expirement with the filter settings.  See also :doc:`/usage/advanced-usage` for more options.  The essential basic settings are as follows:
+Once you are confortable running Altus, you can expirement with the filter settings.  See also :doc:`/usage/altus-cld/advanced-usage` for more options.  The essential basic settings are as follows:
 
 
 ``--radius`` or ``-r``
@@ -152,14 +152,14 @@ Now that we understand the settings, lets try to change the settings on the imag
 
 Finally the entire config file should look like::
 
-    rgb-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    rgb-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    nrm-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    nrm-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    rgb-0=C:\Example\Files\Pass 1\scene_render.exr
+    rgb-1=C:\Example\Files\Pass 2\scene_render.exr
+    pos-0=C:\Example\Files\Pass 1\scene_render_worldPosition.exr
+    pos-1=C:\Example\Files\Pass 2\scene_render_worldPosition.exr
+    nrm-0=C:\Example\Files\Pass 1\scene_render_normals.exr
+    nrm-1=C:\Example\Files\Pass 2\scene_render_normals.exr
+    extra-0=C:\Example\Files\Pass 1\scene_render_reflections.exr
+    extra-1=C:\Example\Files\Pass 2\scene_render_reflections.exr
     out-dir=C:\tmp\output
     kc_1=0.25
     kc_2=0.25
@@ -177,16 +177,16 @@ And the denoised output:
 Final Notes
 ###########
 
-Congratuations on completing the basic usage tutorial for Altus Denoiser!  If want to tweak Altus to perfection, see: :doc:`/usage/advanced-usage`.
+Congratuations on completing the basic usage tutorial for Altus Denoiser!  If want to tweak Altus to perfection, see: :doc:`/usage/altus-cld/advanced-usage`.
 
 .. Note:: 
 
     Explore our help site for more information on Altus and using Altus with third party software.  Here are some places to get started:
 
-    For information on :doc:`/usage/denoising-aovs`.
+    For information on Altus CLD :doc:`/usage/altus-cld/animation`.
 
-    For information on :doc:`/usage/animation`.
+    For information on Altus CLD :doc:`/usage/altus-cld/output-options`.
 
-    For information on :doc:`/usage/output-options`.
+    For information on Altus Studio :doc:`/usage/altus-studio/basic-usage`.
 
     To use Altus with other software see: :doc:`/3rdparty`.

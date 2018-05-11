@@ -4,7 +4,7 @@ Basic usage
 
 Overview
 ########
-.. include:: ../3rdparty/renderer-overview.rst
+.. include:: ../../3rdparty/renderer-overview.rst
 
 
 This guide will explain how to denoise a given scene and adjust some filter settings.  Start by downloading the demo scene we will be using:  <link>
@@ -33,12 +33,12 @@ Import images into Altus
 
 
 Using the Import Wizard
-=======================
+-----------------------
 
 This is the easiest way to import into Altus.  Here you’ll select either “Import Folder” or “Import Images”. From there select the desired files you want to import for denoising. Once the files are selected hit “Open” and the files that were selected will be shown with their AOV’s.  Organize the AOV’s so they match up correctly (this is indicated with a green check-mark over each pass).  Once everything has the green check-mark you can then hit “Finished”.
 
 Setting up the Config File
-==========================
+--------------------------
 
 Another way to import images into Altus is by using a config file.  Config files (.cfg) allow us to define the image paths along with any filter settings.  In this guide we will be using a config file.  For more info see :doc:`/inputs/config-files`.
 
@@ -47,21 +47,21 @@ First to define in a config file are the paths to the b0, b1 renders.  Lets star
 
 For example::
 
-    rgb-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    rgb-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
+    rgb-0=C:\Example\Files\Pass 1\animation_sequence_####.exr
+    rgb-1=C:\Example\Files\Pass 2\animation_sequence_####.exr
 
 Now we can add the position pass and normals::
 
-    pos-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
+    pos-0=C:\Example\Files\Pass 1\animation_sequence_####.exr
+    pos-1=C:\Example\Files\Pass 2\animation_sequence_####.exr
 
-    nrm-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    nrm-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    nrm-0=C:\Example\Files\Pass 1\animation_sequence_normals####.exr
+    nrm-1=C:\Example\Files\Pass 2\animation_sequence_normals####.exr
 
 Finally, we rendered out an AOV for reflections.  Lets add that as an extra AOV to Altus::
 
-    extra-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    extra-0=C:\Example\Files\Pass 1\animation_sequence_normals####.exr
+    extra-1=C:\Example\Files\Pass 2\animation_sequence_normals####.exr
 
 Now that we defined all the input images, we should specify where the output will be saved.  There are a couple options for that, we will append ''--out-dir'' to the config file::
 
@@ -70,23 +70,22 @@ Now that we defined all the input images, we should specify where the output wil
 
 All together the final config file should look like::
 
-    rgb-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    rgb-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior####.exr
-    pos-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior####.exr
-    nrm-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    nrm-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-0=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 1\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
-    extra-1=M:\Client_Files\Dante McCoy - animation\animation altus\Pass 2\Ipswich Cycle Park_11_Club house interior_Geometric normals####.exr
+    rgb-0=C:\Example\Files\Pass 1\animation_sequence_####.exr
+    rgb-1=C:\Example\Files\Pass 2\animation_sequence_####.exr
+    pos-0=C:\Example\Files\Pass 1\animation_sequence_####.exr
+    pos-1=C:\Example\Files\Pass 2\animation_sequence_####.exr
+    nrm-0=C:\Example\Files\Pass 1\animation_sequence_normals####.exr
+    nrm-1=C:\Example\Files\Pass 2\animation_sequence_normals####.exr
+    extra-0=C:\Example\Files\Pass 1\animation_sequence_normals####.exr
+    extra-1=C:\Example\Files\Pass 2\animation_sequence_normals####.exr
     out-dir=C:\tmp\output
 
 
 Running Altus 
---------------
+=============
 
-Now that we have a config file, we can use it to run Altus.  To upload a config file, select the file drop down, select “Load” (Config file) and locate the desired config file you are wanting to import.
+Now that we have a config file, we can use it to run Altus.  To import a config file using Altus Studio: open the file drop down menu, select “Load” (Config file) and locate the desired config file you are wanting to import.  Altus Studio will reconfigure to match the imported config file.
 
-To run Altus; first open a CMD/shell window and start Altus by typing the command in this form: <path/to/Altus.exe> --config=<path/to/config.cfg>
 
 Denoise with Altus
 ##################
@@ -121,27 +120,27 @@ Increasing the radius will result in significantly slower denoising, possibly re
 Generally, reducing the radius will be more noticeable visually than increasing it.
 
 
-``--kc_1``
+``kc_1``
 ----------
 
 This value scales how much color (beauty) will influence the small (detail) kernel blur.  Low values will expose more detail at the risk of leaving noise behind.
 
-``--kc_2``
+``kc_2``
 ----------
 
 This value scales how much color (beauty) will influence the large (edge) kernel blur.  Low values will expose more detail at the risk of leaving noise behind.
 
-``--kc_3``
+``kc_3``
 ----------
 
 This value is not used; it is present for legacy compatibility.
 
-``--kc_4``
+``kc_4``
 ----------
 
 Controls removal of residual noise.
 
-``--kf``
+``kf``
 --------
 
 Controls the influence of feature AOVs (e.g. position, normals, etc) for all kernel sizes.
@@ -175,10 +174,10 @@ Congratulations on completing the basic usage tutorial for Altus Denoiser!  If w
 
     Explore our help site for more information on Altus and using Altus with third party software.  Here are some places to get started:
 
-    For information on :doc:`/usage/denoising-aovs`.
+    For information on Altus Studio :doc:`/usage/altus-studio/animation`.
 
-    For information on :doc:`/usage/animation`.
+    For information on Altus Studio :doc:`/usage/altus-studio/output-options`.
 
-    For information on :doc:`/usage/output-options`.
+    For information on Altus Command Line Denoiser (CLD) :doc:`/usage/altus-cld/basic-usage`.
 
     To use Altus with other software see: :doc:`/3rdparty`.
