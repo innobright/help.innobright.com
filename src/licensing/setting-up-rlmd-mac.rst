@@ -4,7 +4,7 @@ Setting up a new RLM licensing server
 Installing the RLM licensing server
 ###################################
 
-Download the license server `Mac`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important but you should remember it for the next steps.
+Download the license server for `Mac`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important but you should remember it for the next steps.
 
 __ http://shop.innobright.com/wp-content/uploads/2018/05/RLM-12.1-Mac-Licensing-Package.zip
  
@@ -23,9 +23,9 @@ Place the Altus Denoiser license file in same folder that contains the RLM licen
 Starting the RLM license server
 ###############################
 
-The license server can be run from the command-line, or can be set up to run automatically on startup.  On Mac Os, you can use a .plist to automatically start the license server.  You can create the ``plist`` file in the /Users/username/Library/LaunchAgents/ directory.
+The license server can be run from the command-line, or can be set up to run automatically on startup.  On Mac Os, you can use a .plist to automatically start the license server.  You can create the ``plist`` file in the ``/Users/username/Library/LaunchAgents/`` folder.
 
-To add a plist file in Mac, first go to /Users/username/Library/LauchAgents/  This is where you'll create the .plist file.  By default, Mac hides the Library folder in your Home so right click on the finder window and select "Show View Options" to make the Library visible. 
+To add a plist file in Mac, first go to ``/Users/username/Library/LauchAgents/``  This is where you'll create the .plist file.  By default, Mac hides the Library folder in your Home so right click on the finder window and select "Show View Options" to make the Library visible. 
 
 .. image:: ./licensing/mac_step_1.png
    :scale: 80 %
