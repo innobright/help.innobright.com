@@ -54,9 +54,12 @@ Here is an example of the plist file.  This file will execute the rlm executable
     </dict>
     </plist>
 
-You can download the example pfile here:  http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.rlm_-1.zip
 
-Make sure to change the path to the rlm executable `/Users/username/PATH/TO/RLM-Folder/rlm` to the actual path of the unzipped rlm executable. 
+You can `download the plist example file here`__
+
+__ http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.rlm_-1.zip
+
+Just unzip and copy the plist file to your LaunchAgents folder.  Make sure to change the path to the rlm executable ``/Users/username/PATH/TO/RLM-Folder/rlm`` to the actual path of the unzipped rlm executable. 
 
 
 .. image:: ./licensing/rlm_daemon.jpg
@@ -69,4 +72,4 @@ Once the license server has been setup, you can configure your workstations that
 Next Steps
 ##########
 
-Once the license server has been setup, now it's time to connect to it using your workstations (or the computer that will actually run Altus Denoiser).  Visit our help page for more info: :doc:`/licensing/floating-licenses-mac/.
+Once the license server has been setup, now it's time to connect to it using your workstations (or the computer that will actually run Altus Denoiser).  Visit our help page for more info: :doc:`/licensing/floating-licenses-mac/`.

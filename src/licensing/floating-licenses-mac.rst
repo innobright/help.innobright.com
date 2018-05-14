@@ -31,7 +31,11 @@ Here is an example of a plist file that points to the license server (for this e
    </plist>
 
 
-You can download this example here:  http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.setenv.floating.zip
+You can `download the plist example file here`__.
+
+__ http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.setenv.floating.zip
+
+Just unzip and copy the plist file to your LaunchAgents folder.
 
 Given your setup there are three ways that you can set the enviroment variable to point to the license server:
     1) You can use the license server's ``ip address`` for a direct reference
