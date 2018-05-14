@@ -2,7 +2,7 @@ Node-locked licenses
 ====================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     node-locked-licenses-windows
     node-locked-licenses-linux

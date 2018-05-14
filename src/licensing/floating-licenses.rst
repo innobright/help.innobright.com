@@ -2,7 +2,7 @@ Using floating licenses on a Client Computer
 --------------------------------------------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     floating-licenses-windows
     floating-licenses-linux
