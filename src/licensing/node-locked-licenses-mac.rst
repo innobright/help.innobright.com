@@ -53,7 +53,7 @@ Next, enter the LaunchAgents folder.  This directory will contain .plists that w
    :scale: 60 %
    :align: center
 
-Finally, add a new .plist file named "com.Altus.setenv.plist" and copy the example .plist above.  Make sure to change the line: "<string>/Users/username/innobright_licenses.lic</string>" to match the path to the license file.  For example, if you have a .lic file in your /Users/username/Desktop/innobright_license.lic then the line should be:  <string>/Users/username/Desktop/innobright_license.lic</string>
+Finally, add a new .plist file named ``com.Altus.setenv.plist`` and copy the example .plist above.  Make sure to change the line in the plist: ``/Users/username/innobright_licenses.lic`` to match the path to the license file.  For example, if you have a .lic file in your ``/Users/username/Desktop/innobright_license.lic`` then that section should be:  ``/Users/username/Desktop/innobright_license.lic``
 
 .. image:: ./licensing/mac_step_3.jpg
    :scale: 60 %

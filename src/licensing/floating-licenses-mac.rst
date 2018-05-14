@@ -39,6 +39,7 @@ Given your setup there are three ways that you can set the enviroment variable t
 The enviroment variable will be in the form:
 
 Variable name:  ALTUS_LICENSE
+
 Variable value: port@ipaddress or port@domainname or port@machinename
 
 .. Examples:: 
