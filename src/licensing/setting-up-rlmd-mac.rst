@@ -4,7 +4,7 @@ Setting up a new RLM licensing server
 Installing the RLM licensing server
 ###################################
 
-Download the license server for `Mac`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important but you should remember it for the next steps.
+Download the `license server for Mac`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important but you should remember it for the next steps.
 
 __ http://shop.innobright.com/wp-content/uploads/2018/05/RLM-12.1-Mac-Licensing-Package.zip
  
@@ -31,7 +31,7 @@ To add a plist file in Mac, first go to ``/Users/username/Library/LauchAgents/``
    :scale: 80 %
    :align: center
 
-Next, enter the LaunchAgents folder.  This directory will contain .plists that will run on startup.  This will ensure that the ALTUS_LICENSE enviroment varaible will be loaded everytime.
+Next, enter the LaunchAgents folder.  This directory will contain .plists that will run on startup.  This will ensure that the ``ALTUS_LICENSE`` enviroment varaible will be loaded everytime.
 
 .. image:: ./licensing/mac_step_2.png
    :scale: 60 %
@@ -59,7 +59,7 @@ Here is an example of the plist file::
    :align: center
 
 
-You can copy the example plist above, simply replace the "/Users/username/PATH/TO/RLM-Folder/rlm" with the path to the RLM executable that you unzipped at the begining of this guide.
+You can copy the example plist above, simply replace the ``/Users/username/PATH/TO/RLM-Folder/rlm`` with the path to the RLM executable that you unzipped at the begining of this guide.
 
 Once the license server has been setup, you can configure your workstations that will run Altus Denoiser (client computers) to access the license servers to request a license.
 
