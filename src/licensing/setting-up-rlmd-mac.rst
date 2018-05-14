@@ -66,4 +66,4 @@ Once the license server has been setup, you can configure your workstations that
 Next Steps
 ##########
 
-Once the license server has been setup, now it's time to connect to it using your workstations (or the computer that will actually run Altus Denoiser).  Visit our help page for more info: :doc:`/licensing/floating-licenses/.
+Once the license server has been setup, now it's time to connect to it using your workstations (or the computer that will actually run Altus Denoiser).  Visit our help page for more info: :doc:`/licensing/floating-licenses-mac/.
