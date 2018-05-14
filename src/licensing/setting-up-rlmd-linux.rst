@@ -4,7 +4,7 @@ Setting up a new RLM licensing server
 Installing the RLM licensing server
 ###################################
 
-Download the `license server bundle for Linux`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important.
+Download the `license server bundle for Linux`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important but remember it for later steps.
 
 __ http://shop.innobright.com/wp-content/uploads/2018/03/RLM-12.1-Linux-Licensing-Package.zip
 

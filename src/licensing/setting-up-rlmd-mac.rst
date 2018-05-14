@@ -37,7 +37,7 @@ Next, enter the LaunchAgents folder.  This directory will contain .plists that w
    :scale: 60 %
    :align: center
 
-Here is an example of the plist file::
+Here is an example of the plist file, you can copy this into your newly created plist file::
 
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -59,7 +59,7 @@ Here is an example of the plist file::
    :align: center
 
 
-You can copy the example plist above, simply replace the ``/Users/username/PATH/TO/RLM-Folder/rlm`` with the path to the RLM executable that you unzipped at the begining of this guide.
+You can copy this example plist above, simply replace the ``/Users/username/PATH/TO/RLM-Folder/rlm`` with the path to the RLM executable that you unzipped at the begining of this guide.
 
 Once the license server has been setup, you can configure your workstations that will run Altus Denoiser (client computers) to access the license servers to request a license.
 

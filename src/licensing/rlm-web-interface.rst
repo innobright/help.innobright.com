@@ -1,7 +1,7 @@
 Using RLM's Web interface
 -------------------------
 
-Reprise software provides a web-based interface for administration of the running rlm process. This can be used to perform similar functions to rlmutil. The web server is started automatically on port 5054 when rlm is started. To see this just type localhost:5054 into a browser window on the license server.
+Reprise software provides a web-based interface for administration of the running rlm process. This can be used to perform similar functions to rlmutil. The web server is started automatically on port 5053 or 5054 when rlm is started. To see this just type localhost:5054 or localhost:5053 into a browser window on the license server.
 
 
 The web interface allows you to do many operations:

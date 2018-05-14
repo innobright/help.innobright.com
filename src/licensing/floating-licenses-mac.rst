@@ -8,7 +8,7 @@ Connecting to the license server
 
 Workstations must be configured so that it can find the license server and checkout licenses.  You do this by defining an environment variable ``ALTUS_LICENSE``. Altus Denoiser will look for the :envvar:`ALTUS_LICENSE` environment variable to point to the license server.  In order to automatically have Mac setup the enviroment variable on startup, you can use a plist file.
 
-Here is an example of a plist file that points to the license server (for this example the license server's ip address is 192.168.1.1)::
+Here is an example of a plist file that points to the license server (for this example the license server's ip address is 192.168.1.1), you can copy this plist file::
 
    <?xml version="1.0" encoding="UTF-8"?>
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -30,6 +30,8 @@ Here is an example of a plist file that points to the license server (for this e
    </dict>
    </plist>
 
+
+You can copy this example above into your newly created plist file.
 
 Given your setup there are three ways that you can set the enviroment variable to point to the license server:
     1) You can use the license server's ``ip address`` for a direct reference

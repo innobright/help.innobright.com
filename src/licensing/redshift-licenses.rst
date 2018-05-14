@@ -5,6 +5,9 @@ Altus Denoiser integrated into Redshift uses a different license type ('altus-re
 
 When purchasing a license for Altus Denoiser integrated into Redshift you will need the MAC (media access control) address of your license server (floating licenses) or computer (node-locked licenses). We need this information before we can issue you a license.  You should reference the MAC address that is being used by the local computer or by the license server.  For information on finding the MAC Address visit: https://kb.netgear.com/1005/How-to-find-a-MAC-address
 
+After pruchasing the license, Innobright will send you an email confermation with the license file (.lic) attached.  This license is what you'll need to install below.
+
+
 Node-Locked License
 ###################
 
