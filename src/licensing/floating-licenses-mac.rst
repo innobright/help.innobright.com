@@ -1,20 +1,14 @@
-Node-locked licenses
-====================
+Using floating licenses on a Client Computer
+--------------------------------------------
 
-Node-locked licenses lock your usage of Altus to a computer with a specific MAC address. If the MAC address changes, you will no longer be able to use your license.
+First, ensure that the RLM license server has been started correctly.  Visit here for more info on setting the ``RLM License Server`` :doc:`/licensing/setting-up-rlmd`.
 
-.. Note::
+Connecting to the license server
+################################
 
-   You do not need to run the RLM Licensing Server if you have a node-locked license.
+Workstations must be configured so that it can find the license server and checkout licenses.  You do this by defining an environment variable ``ALTUS_LICENSE``. Altus Denoiser will look for the :envvar:`ALTUS_LICENSE` environment variable to point to the license server.  In order to automatically have Mac setup the enviroment variable on startup, you can use a plist file.
 
-Set the ALTUS_LICENSE environment variable
-------------------------------------------
-
-Altus Denoiser will look for the :envvar:`ALTUS_LICENSE` environment variable to point to a fully-qualified path to the license file so Altus can find it.  For example, if you place your licenses into :file:`C:\\Licenses`, and your license is called :file:`altus.lic`, then the value of the environment variable must be ``C:\Licenses\altus.lic``.
-
-In order to automatically have Mac setup the enviroment variable on startup, you can create a ``plist`` file in the /Users/username/Library/LaunchAgents directory.
-
-Here is an example of a plist file that points to the path of the license file (for this example the license file path is /Users/username/innobright_licenses.lic)::
+Here is an example of a plist file that points to the license server (for this example the license server's ip address is 192.168.1.1)::
 
    <?xml version="1.0" encoding="UTF-8"?>
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -27,7 +21,7 @@ Here is an example of a plist file that points to the path of the license file (
        <string>/bin/launchctl</string>
        <string>setenv</string>
        <string>ALTUS_LICENSE</string>
-       <string>/Users/username/innobright_licenses.lic</string>
+       <string>192.168.1.1</string>
      </array>
      <key>RunAtLoad</key>
      <true/>
@@ -36,6 +30,20 @@ Here is an example of a plist file that points to the path of the license file (
    </dict>
    </plist>
 
+
+Given your setup there are three ways that you can set the enviroment variable to point to the license server:
+    1) You can use the license server's ``ip address`` for a direct reference
+    2) You can use a ``domain name`` if your license server has an internal domain name
+    3) If you have machines that identify by name you can use the ``machine name``.
+
+The enviroment variable will be in the form:
+
+Variable name:  ALTUS_LICENSE
+Variable value: port@ipaddress or port@domainname or port@machinename
+
+.. Examples:: 
+    
+    5053@192.168.1.50 or 5053@optimusprime.innobright.com or 5053@optimusprime
 
 
 Mac OS

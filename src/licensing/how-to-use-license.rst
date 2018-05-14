@@ -8,7 +8,7 @@ Node-Locked License
 
 If you purchased a node locked license: this license is locked to the machine you purchased it for. You can run unlimited instances of Altus Denoiser on that machine making it great for multi-GPU.
 
-Node locked licenses can be installed in two ways.  The recommended way is with Enviroment Variables.  
+Node locked licenses can be installed in two ways.  The recommended way is with Enviroment Variables as it will work with Standalone and integrated/plugins.  If you only use Altus' standalone products (Altus-CLD and Altus-Studio) then the 2nd method will be faster.  
 
 
 1) Enviroment Variables
@@ -16,11 +16,11 @@ Node locked licenses can be installed in two ways.  The recommended way is with 
 
 Visit your OS page for more information on setting up your ``ALTUS_LICENSE`` enviroment variable to install the node-locked license.
 
-Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/windowsEnviromentVaraible`.
+Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/node-locked-licenses-windows`.
 
-Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/macEnviromentVariable`.
+Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/node-locked-licenses-mac`.
 
-Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/linuxEnviromentVariable`.
+Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/node-locked-licenses-linux`.
 
 
 2) Standalone Products
@@ -58,11 +58,11 @@ The client computer is the machine that will run Altus Denoiser.  It connects to
 
 Visit our OS page for more information on setting up your enviroment variable:
 
-Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/windowsEnviromentVaraible`.
+Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/floating-licenses-windows`.
 
-Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/macEnviromentVariable`.
+Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/floating-licenses-mac`.
 
-Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/linuxEnviromentVariable`.
+Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/floating-licenses-linux`.
 
 
 

@@ -4,13 +4,10 @@ Setting up a new RLM licensing server
 Installing the RLM licensing server
 ###################################
 
-Download the license server bundle for `Windows`__, `Mac`__ or `Linux`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important.
-
-__ http://shop.innobright.com/wp-content/uploads/2018/03/RLM-12.1-Windows-Licensing-Package.zip
+Download the license server `Mac`__. Extract the files from the zip and move them to a folder on your license server machine. The location of the folder is not important.
 
 __ http://shop.innobright.com/wp-content/uploads/2018/05/RLM-12.1-Mac-Licensing-Package.zip
  
-__ http://shop.innobright.com/wp-content/uploads/2018/03/RLM-12.1-Linux-Licensing-Package.zip
 
 
 Add your Altus license file
@@ -28,11 +25,28 @@ Starting the RLM license server
 
 The license server can be run from the command-line, or can be set up to run automatically on startup.
 
-* On Windows, you can add it as a windows service so that it automatically starts when you boot your server.
+* On Mac Os, you can use a .plist to automatically start the license server.  You can create the ``plist`` file in the /Users/username/Library/LaunchAgents directory.
 
-* On Mac Os, you can use a .plist to automatically start the license server.  For more info visit:  :doc:`/licensing/setting-up-rlmd-mac`
+Here is an example of the plist file::
 
-* On Linux, you can schedule the license server to start on boot.
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>Label</key>
+      <string>com.ALTUS.rlm</string>
+      <key>ProgramArguments</key>
+      <array>
+        <string>/Users/eknude/Desktop/RLM_MAC/rlm</string>
+      </array>
+      <key>RunAtLoad</key>
+      <true/>
+    </dict>
+    </plist>
+
+.. image:: ./licensing/rlm_daemon.jpg
+   :scale: 80 %
+   :align: center
 
 
 Once the license server has been setup, you can configure your workstations that will run Altus Denoiser (client computers) to access the license servers to request a license.
