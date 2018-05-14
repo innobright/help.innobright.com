@@ -16,11 +16,11 @@ Node locked licenses can be installed in two ways.  The recommended way is with 
 
 Visit your OS page for more information on setting up your ``ALTUS_LICENSE`` enviroment variable to install the node-locked license.
 
-Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/node-locked-licenses-windows`.
+Setting up :doc:`/licensing/node-locked-licenses-windows` for Windows.
 
-Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/node-locked-licenses-mac`.
+Setting up :doc:`/licensing/node-locked-licenses-mac` for Mac.
 
-Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/node-locked-licenses-linux`.
+Setting up :doc:`/licensing/node-locked-licenses-linux` for Linux.
 
 
 2) Standalone Products
@@ -46,9 +46,9 @@ In order to use a floating license you must first setup an RLM License server to
 
 For information on setting up the license server visit: :doc:`/licensing/setting-up-rlmd`.
 
-For information on using an existing RLM license server visit: :doc:`/licensing/setting-up-rlmd`.
+For information on using an existing RLM license server visit: :doc:`/licensing/existing-rlmd`.
 
-For information on using RLM's web interface visit: :doc:`/licensing/setting-up-rlmd`.
+For information on using RLM's web interface visit: :doc:`/licensing/rlm-web-interface`.
 
 
 2) Client Computer
@@ -63,48 +63,3 @@ Setting up ``Enviroment Variable`` in Windows :doc:`/licensing/floating-licenses
 Setting up ``Enviroment Variable`` in Mac :doc:`/licensing/floating-licenses-mac`.
 
 Setting up ``Enviroment Variable`` in Linux :doc:`/licensing/floating-licenses-linux`.
-
-
-
-BLAH BLAH BLAH BLAH
-###################
-
-
-To let Altus find the license you will need to point to the license path by using a system environment variable:
-
-Given your setup there are three ways that you can setup the rlm service:
-  1) You can use an ip address for a direct reference
-  2) You can use a domain name if you license server has an internal domain name
-  3) If you have machines that identify by name you can use machine name.
-
-Examples:
- * ALTUS_LICENSE: port@ipaddress or port@domainname or port@machinename
- * ALTUS_LICENSE: 5053@192.168.1.50 or 5053@optimusprime.innobright.com or 5053@optimusprime
-
-
-.. Note::
-	If you do not know how to adjust your environment variables please reference this documentation.
-
-	WINDOWS: http://www.computerhope.com/issues/ch000549.htm
-
-	LINUX: http://www.cyberciti.biz/faq/set-environment-variable-linux/
-
-
-License Server for Floating Licenses
-====================================
-
-.. Note::
-	For more information, checkout our articles on 'Setting up a new RLM licensing server' and 'Using an existing RLM licensing server'
-
-The license server runs on port 5053. This port can be changed in the license, the top line will say: HOST localhost macid 5053
-
-The license file can be stored anywhere, but the best place is to store it in the same directory as the license server.
-
-You can operate the license server by double clicking the rlm.exe executable. This will start the license server and pick up any contained licenses in its directory.
-
-running rlm -h from the command line will provide a help:
-	* -nows turns off the webservice that allows you to check your licenses on port 5054
-	* -ws allows you to specify a different port for the web server
-	* -c allows you to specify a location for the license file
-	* -dlog specify an alternate path for the debug log
-
