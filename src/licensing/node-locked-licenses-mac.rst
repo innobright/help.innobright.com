@@ -36,6 +36,9 @@ Here is an example of a plist file that points to the path of the license file (
    </dict>
    </plist>
 
+You can download the plist example file here:  http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.setenv.nodelocked.zip
+
+Make sure to change the example path of `/Users/username/innobright_licenses.lic` to the actual path on your computer.
 
 
 Mac OS

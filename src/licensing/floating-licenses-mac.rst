@@ -31,7 +31,7 @@ Here is an example of a plist file that points to the license server (for this e
    </plist>
 
 
-You can copy this example above into your newly created plist file.
+You can download this example here:  http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.setenv.floating.zip
 
 Given your setup there are three ways that you can set the enviroment variable to point to the license server:
     1) You can use the license server's ``ip address`` for a direct reference
@@ -44,7 +44,7 @@ Variable name:  ALTUS_LICENSE
 
 Variable value: port@ipaddress or port@domainname or port@machinename
 
-.. Examples:: 
+Examples:: 
     
     5053@192.168.1.50 or 5053@optimusprime.innobright.com or 5053@optimusprime
 

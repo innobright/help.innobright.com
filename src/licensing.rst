@@ -4,13 +4,15 @@ Licensing
 .. toctree::
     :maxdepth: 2
 
+    licensing/redshift-licenses
     licensing/how-to-use-license
+    licensing/node-locked-licenses
+    licensing/floating-licenses
     licensing/setting-up-rlmd
     licensing/existing-rlmd
     licensing/rlm-web-interface
     licensing/evaluation
     licensing/virtual-machines
-    licensing/node-locked-licenses
     licensing/troubleshooting
 
 You can `buy a license for Altus from our Website`__. Without a license, Altus will insert a watermark into any filtered image.

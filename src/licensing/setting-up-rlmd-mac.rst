@@ -37,7 +37,7 @@ Next, enter the LaunchAgents folder.  This directory will contain .plists that w
    :scale: 60 %
    :align: center
 
-Here is an example of the plist file, you can copy this into your newly created plist file::
+Here is an example of the plist file.  This file will execute the rlm executable automatically starting the license server::
 
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -54,12 +54,15 @@ Here is an example of the plist file, you can copy this into your newly created 
     </dict>
     </plist>
 
+You can download the example pfile here:  http://shop.innobright.com/wp-content/uploads/2018/05/com.Altus_.rlm_-1.zip
+
+Make sure to change the path to the rlm executable `/Users/username/PATH/TO/RLM-Folder/rlm` to the actual path of the unzipped rlm executable. 
+
+
 .. image:: ./licensing/rlm_daemon.jpg
    :scale: 80 %
    :align: center
 
-
-You can copy this example plist above, simply replace the ``/Users/username/PATH/TO/RLM-Folder/rlm`` with the path to the RLM executable that you unzipped at the begining of this guide.
 
 Once the license server has been setup, you can configure your workstations that will run Altus Denoiser (client computers) to access the license servers to request a license.
 
