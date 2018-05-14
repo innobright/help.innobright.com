@@ -1,5 +1,5 @@
-Node-locked licenses
-====================
+Node-locked licenses on Mac
+===========================
 
 Node-locked licenses lock your usage of Altus to a computer with a specific MAC address. If the MAC address changes, you will no longer be able to use your license.
 

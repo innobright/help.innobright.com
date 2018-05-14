@@ -1,5 +1,5 @@
-Setting up a new RLM licensing server
--------------------------------------
+Setting up a new RLM licensing server for Mac OS
+------------------------------------------------
 
 Installing the RLM licensing server
 ###################################

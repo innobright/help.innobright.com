@@ -1,5 +1,5 @@
-Using floating licenses on a Client Computer
---------------------------------------------
+Using floating licenses on a Client Computer running Mac
+--------------------------------------------------------
 
 First, ensure that the RLM license server has been started correctly.  Visit here for more info on setting the ``RLM License Server`` :doc:`/licensing/setting-up-rlmd`.
 

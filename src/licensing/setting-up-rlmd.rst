@@ -2,7 +2,7 @@ Setting up a new RLM licensing server
 =====================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     setting-up-rlmd-windows
     setting-up-rlmd-linux
