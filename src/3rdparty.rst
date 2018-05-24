@@ -2,21 +2,11 @@ Integration with Third Party Software
 -------------------------------------
 
 .. toctree::
-    :caption: Digital Content Creation (DCC) and compositing packages
+    :caption: Altus Denoiser Plugins
     :maxdepth: 1
 
-    Houdini <3rdparty/sidefx-houdini>
-    Nuke <3rdparty/the-foundry-nuke>
-
-.. toctree::
-    :caption: Render farm queue automation
-    :maxdepth: 1
-    :name: render-farm-queue-automation-toc
-
-    Deadline <3rdparty/thinkbox-deadline>
-    Muster <3rdparty/visual-vertex-muster>
-    Qube <3rdparty/pipelinefx-qube>
-    Royal Render <3rdparty/royal-render>
+    Altus-Arnold <3rdparty/solidangle-arnold-plugin>
+    Altus-Nuke <3rdparty/the-foundry-nuke-plugin>
 
 .. toctree::
     :caption: Renderers
@@ -35,3 +25,21 @@ Integration with Third Party Software
     Redshift <3rdparty/redshift>
     Renderman <3rdparty/pixar-renderman>
     V-Ray <3rdparty/chaos-group-vray>
+
+
+.. toctree::
+    :caption: Digital Content Creation (DCC) and compositing packages
+    :maxdepth: 1
+
+    Houdini <3rdparty/sidefx-houdini>
+    Nuke <3rdparty/the-foundry-nuke>
+
+.. toctree::
+    :caption: Render farm queue automation
+    :maxdepth: 1
+    :name: render-farm-queue-automation-toc
+
+    Deadline <3rdparty/thinkbox-deadline>
+    Muster <3rdparty/visual-vertex-muster>
+    Qube <3rdparty/pipelinefx-qube>
+    Royal Render <3rdparty/royal-render>

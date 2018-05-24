@@ -2,15 +2,35 @@ Licensing
 ---------
 
 .. toctree::
+    :caption: Licensing Information
     :maxdepth: 2
 
+    licensing/license-options
+    licensing/mac-address
+
+.. toctree::
+    :caption: Integrated/Plugins
+    :maxdepth: 1
+
     licensing/redshift-licenses
+    licensing/arnold-altus-licenses
+    licensing/nuke-altus-licenses
+
+.. toctree::
+    :caption: Altus Standalone Denoiser
+    :maxdepth: 2
+
     licensing/how-to-use-license
     licensing/node-locked-licenses
     licensing/floating-licenses
     licensing/setting-up-rlmd
     licensing/existing-rlmd
     licensing/rlm-web-interface
+
+.. toctree::
+    :caption: Troubleshooting
+    :maxdepth: 1
+
     licensing/evaluation
     licensing/virtual-machines
     licensing/troubleshooting
